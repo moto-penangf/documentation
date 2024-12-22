@@ -9,4 +9,5 @@
     - [Partitions](/dev/partitions.md)
     - [Metamode](/dev/metamode.md)
     - [Testpoints](/dev/testpoints.md)
+    - [TWRP (Custom Recovery)](/dev/twrp.md)
     - [Tools](/dev/tools.md)
