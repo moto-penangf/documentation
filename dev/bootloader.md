@@ -70,7 +70,7 @@ FAILED (remote: 'unknown command')
 **The device claims to be unlockable from fastboot**
 
 ```sh
-$ fastboot flashing unlock
+$ fastboot flashing get_unlock_ability
 
 (bootloader) unlock_ability = 16777216
 ```
@@ -86,8 +86,8 @@ Unfortunately, the device has a patched preloader, meaning we can't crash to BRO
 We can only interact with the preloader.
 
 **Some file that are required:**
-* preloader (Easily obtainable from official firmware, or more recently [from here](https://github.com/progzone122/fuckyoumoto/raw/refs/heads/main/sources/preloader_penangf.bin))
-* Download Agent (Obtainable from RSA SP Flash tool, as it gets extracted during Rescue Mode, and now easy to get [from GitHub](https://github.com/progzone122/penangf-sp-flash-tool))
+* preloader (Easily obtainable from official firmware, or more recently [from here](https://github.com/moto-penangf/fuckyoumoto/raw/refs/heads/main/sources/preloader_penangf.bin))
+* Download Agent (Obtainable from RSA SP Flash tool, as it gets extracted during Rescue Mode, and now easy to get [from GitHub](https://github.com/moto-penangf/penangf-sp-flash-tool))
 
 
 <br><br >
@@ -96,7 +96,7 @@ We can only interact with the preloader.
 $ mtk r seccfg seccfg.bin --loader DA_PL_NO_CERT_V6.bin --preloader preloader_penangf.bin > logs.txt
 ```
 
-Thanks to [@DiabloSat](https://github.com/progzone122), another [DA Agent](https://github.com/progzone122/penangf-sp-flash-tool/releases/download/0.1/MT6768_USER.bin) was found that works with mtkclient.
+Thanks to [@DiabloSat](https://github.com/progzone122), another [DA Agent](https://github.com/moto-penangf/penangf-sp-flash-tool/releases/download/0.1/MT6768_USER.bin) was found that works with mtkclient.
 From now one, this will be used instead of the official one, as it provides more features and better outputs with mtkclient.
 
 
@@ -117,7 +117,7 @@ So unfortunately not even that works.
 
 ### Testpoints?
 
-[Doesn't work and almost bricked a device.](https://github.com/progzone122/penangf-schematics/issues/1)
+[Doesn't work and almost bricked a device.](https://github.com/moto-penangf/penangf-schematics/issues/1)
 
 The list of the testpoints I've found is [here](testpoints.md).
 
