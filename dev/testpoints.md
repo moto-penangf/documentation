@@ -4,7 +4,7 @@
 
 > [!ERROR]
 > #### BE CAREFUL WITH UART CONNECTION
-> There is a possibility that this could **throw off the battery calibration or even break the charge counter** (Still investigating what happened)
+> There is a possibility that this could **throw off the battery calibration or even break the charge controller** (Still investigating what happened)
 > 
 > **Sources:**  
 > [Incedent](https://github.com/orgs/moto-penangf/discussions/2)  
