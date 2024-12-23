@@ -12,3 +12,4 @@
     - [Testpoints](/dev/testpoints.md)
     - [TWRP (Custom Recovery)](/dev/twrp.md)
     - [Tools](/dev/tools.md)
+- [Forum (More info)](https://github.com/orgs/moto-penangf/discussions)
