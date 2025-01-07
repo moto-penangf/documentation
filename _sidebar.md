@@ -7,6 +7,7 @@
     - [AVB (Android Verify Boot)](/info/avb.md)
     - [DM-Verity](/info/dm-verity.md)
 - Boot modes
+  - [Preloader](/modes/preloader.md) 
   - [PCS](/modes/pcs.md)
   - [META](/modes/metamode.md)
 - Development
