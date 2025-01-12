@@ -49,9 +49,13 @@ void platform_emergency_download(int timeout)
 The code for the download keys in the moto g23/g13 is the following:
 
 ```c
+#define KPDL1 KPCOL0 // 0
+#define KPDL2 PWRKEY_HW // 8
+#define KPDL3 HOMEKEY_RST // 17
+
 bool are_dl_keys_pressed()
 {
-    if(mtk_detect_key(0) && mtk_detect_key(8) && mtk_detect_key(17))
+    if(mtk_detect_key(KPDL1) && mtk_detect_key(KPDL2) && mtk_detect_key(KPDL3))
     {
         pr_debug("dl keys are pressed\n");
         return true;
@@ -73,16 +77,20 @@ By analyzing the logs, we were able to assign the following values to the keys:
 The `mtk_detect_key(int key)` outputs a different string based on what button is pressed:
 
 ```c
+#define MTK_PMIC_RST_KEY HOMEKEY_RST // 17
+
+#define KEYPAD_MAX_NUM 0x47
+
 bool mtk_detect_key(int key)
 {
     bool ret;
     char msg[128];
 
-    if (key > 0x47){
+    if (key > KEYPAD_MAX_NUM){
         return false;
     }
 
-    if (key == 8){
+    if (key == PWRKEY_HW){
         ret = is_power_key_pressed();
         
         if(ret != 1){
@@ -93,7 +101,7 @@ bool mtk_detect_key(int key)
     }
     else
     {
-        if (key != 17){
+        if (key != MTK_PMIC_RST_KEY){
             if(....) // This check is still to get decompiled, but I assume it confirms that any other key is pressed based on the context
             {
                 pr_debug("key %d is pressed\n", key);
