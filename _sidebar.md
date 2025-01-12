@@ -21,4 +21,5 @@
     - [Tools](/dev/tools.md)
 - Schematic analysis
   - [KEYPAD](/schematic/keypad.md)
+  - [CONTROL I/F](/schematic/control-if.md)
 - [Forum (More info)](https://github.com/orgs/moto-penangf/discussions)
