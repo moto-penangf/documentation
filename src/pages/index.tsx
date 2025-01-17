@@ -33,8 +33,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="This documentation is dedicated to discoveries made by me and other people interested in unlocking the Moto G23 and Moto G13 bootloader.<head />">
       <HomepageHeader />
       <main>
         {/*<HomepageFeatures />*/}
