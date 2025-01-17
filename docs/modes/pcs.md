@@ -37,7 +37,7 @@ There are **three ways** to boot into PCS mode - using the **VOL- button** or us
 2. Wait until Preloader mode is disabled and the gray battery icon appears
 3. Short the testpoint KPCOL to GND
 
-![Image](../files/assets/pcs-mode-kpcol0.png)
+![Image](../../static/assets/pcs-mode-kpcol0.png)
 
 ### Make a short circuit on the board
 :::warning
@@ -52,7 +52,7 @@ As a result, **the device would forcibly switch to PCS MIDI mode.**
 On Linux and Windows, the device is detected differently in this mode
 
 ### Linux
-![Image](../files/assets/pcs-mode-linux.png)
+![Image](../../static/assets/pcs-mode-linux.png)
 
 ### Windows
-![Image](../files/assets/pcs-mode-windows.png)
+![Image](../../static/assets/pcs-mode-windows.png)

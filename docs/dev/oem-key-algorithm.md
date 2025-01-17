@@ -35,7 +35,7 @@ The mtkclient utility gives **not only SOC_ID** (it is a combination of two keys
 
 This can be useful for key generation
 
-![mtkclient-keys-info.png](../files/assets/mtkclient-keys-info.png)
+![mtkclient-keys-info.png](../../static/assets/mtkclient-keys-info.png)
 
 ## sha256?
 

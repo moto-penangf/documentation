@@ -40,7 +40,7 @@ There are many ways to boot into Fastboot mode, you can use one of the last comp
 - Short the testpoint KPCOL to GND
 - Hold down the shorted testpoint, connect the phone to the PC
 
-![Image](../files/assets/pcs-mode-kpcol0.png)
+![Image](../../static/assets/pcs-mode-kpcol0.png)
 
 ## Available commands and mode for fastboot:
 

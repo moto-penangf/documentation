@@ -10,7 +10,7 @@ title: Disassembly guide
 - Don't be an idiot with crooked hands
 
 ## Guide
-![step1.JPG](../files/assets/disassembly/step1.JPG)
-![step2.JPG](../files/assets/disassembly/step2.JPG)
-![step2.JPG](../files/assets/disassembly/step3.JPG)
-![step2.JPG](../files/assets/disassembly/step4.JPG)
+![step1.JPG](../../static/assets/disassembly/step1.JPG)
+![step2.JPG](../../static/assets/disassembly/step2.JPG)
+![step2.JPG](../../static/assets/disassembly/step3.JPG)
+![step2.JPG](../../static/assets/disassembly/step4.JPG)

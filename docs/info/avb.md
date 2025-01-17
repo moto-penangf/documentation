@@ -9,7 +9,7 @@ AVB (Android Verified Boot) is a technology that verifies the integrity of the A
 To disable AVB usually use modified vbmeta, but in our case if you modify vbmeta, boot, vendor_boot and so on - the device will go to “Red State” and stop booting.
 This happens due to system integrity violation when the bootloader is locked.
 
-![red-state-error.png](../files/assets/red-state-error.png)
+![red-state-error.png](../../static/assets/red-state-error.png)
 
 To prevent this error, you need to unlock the bootloader to put the device into the “Orange State” to disable signature verification
 

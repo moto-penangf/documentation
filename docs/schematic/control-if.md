@@ -11,8 +11,8 @@ It is responsible for coordinating the communication and managing the interactio
 ## PWRKEY_SW
 PWRKEY_SW does not have an easily accessible testpoint, it is connected via a 2.2K resistor to the power button and the other end to the PMIC to the “Control I/F” block.
 
-![image1.PNG](../files/assets/schematic/pwrkey_sw/image1.PNG)
-![image2.PNG](../files/assets/schematic/pwrkey_sw/image2.PNG)
+![image1.PNG](../../static/assets/schematic/pwrkey_sw/image1.PNG)
+![image2.PNG](../../static/assets/schematic/pwrkey_sw/image2.PNG)
 
 ### Using PWRKEY_SW without testpoint?
 :::warning
@@ -23,13 +23,13 @@ Only use this information if you know what you are doing!
 
 Since Motorola hasn't created a testpoint for us to do this, why not use the contact between the capacitor and the PWRKEY_SW line?
 
-![image3.PNG](../files/assets/schematic/pwrkey_sw/image3.PNG)
+![image3.PNG](../../static/assets/schematic/pwrkey_sw/image3.PNG)
 
 ## HOMEKEY_SW
 HOMEKEY_SW does not have an easily accessible testpoint, it is connected via a 2.2K resistor to the VOL+ button and the other end to the PMIC to the “Control I/F” block.
 
-![image1.PNG](../files/assets/schematic/homekey_sw/image1.PNG)
-![image2.PNG](../files/assets/schematic/homekey_sw/image2.PNG)
+![image1.PNG](../../static/assets/schematic/homekey_sw/image1.PNG)
+![image2.PNG](../../static/assets/schematic/homekey_sw/image2.PNG)
 
 ### Using HOMEKEY_SW without testpoint?
 :::warning
@@ -38,4 +38,4 @@ This information has not yet been verified. It's just a theory!
 Only use this information if you know what you are doing!
 :::
 
-![image3.PNG](../files/assets/schematic/homekey_sw/image3.PNG)
+![image3.PNG](../../static/assets/schematic/homekey_sw/image3.PNG)

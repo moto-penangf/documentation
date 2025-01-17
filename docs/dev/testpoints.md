@@ -10,11 +10,11 @@ title: Testpoints
 * [JTAG](#jtag)
 
 ### FRONT:
-![](../files/assets/mainboard-front.png)
+![](../../static/assets/mainboard-front.png)
 *FRONT PICTURE PROVIDED BY [DiabloSat](https://github.com/progzone122)*
 
 ### BACK:
-![](../files/assets/mainboard-back.png)
+![](../../static/assets/mainboard-back.png)
 *BACK PICTURE COMES FROM [THIS](https://www.youtube.com/watch?v=Y-8yj6qbFQ4) VIDEO*
 
 ### eMMC:
@@ -28,11 +28,11 @@ Update: We're not sure yet if these are the correct TP, or if they are TP at all
 DO NOT ATTEMPT TO USE THEM.
 :::
 
-![](../files/assets/eMMC_test_points.png)
+![](../../static/assets/eMMC_test_points.png)
 
 
 ### JTAG:
-![](../files/assets/jtag.png)
+![](../../static/assets/jtag.png)
 
 ### More testpoints?
 Also, although we don't have testpoints for this, we still have the ability to access [KPCOL1](../schematic/keypad.md#kpcol1), [PWRKEY_SW](../schematic/control-if.md#pwrkey_sw), [HOMEKEY_SW](../schematic/control-if.md#homekey_sw).

@@ -19,15 +19,15 @@ The hardware keyboard (keypad matrix) connects the rows and columns. When the us
 ## KPCOL0
 The KPCOL0 testpoint is connected directly to the SOC (bypassing the volume buttons)
 
-![image3.PNG](../files/assets/schematic/kpcol0/image3.PNG)
+![image3.PNG](../../static/assets/schematic/kpcol0/image3.PNG)
 
 For some reason in the documentation, the testpoint KPCOL0 information is located next to the UART testpoints information and it says “TP FORCE DOWNLOAD” in Chinese.
 
-![image2.PNG](../files/assets/schematic/kpcol0/image2.PNG)
+![image2.PNG](../../static/assets/schematic/kpcol0/image2.PNG)
 
 Located in easy access, near the fingerprint slot
 
-![image1.PNG](../files/assets/schematic/kpcol0/image1.PNG)
+![image1.PNG](../../static/assets/schematic/kpcol0/image1.PNG)
 
 **Perhaps we need to use some combination of test points including KPCOL0 to go to BROM?**
 
@@ -41,8 +41,8 @@ Located in easy access, near the fingerprint slot
 ## KPCOL1
 KPCOL1 testpoint unlike KPCOL0 does not have an available testpoint to activate it and this line is connected to the VOL- volume button via a 2.2K resistor.
 
-![image1.PNG](../files/assets/schematic/kpcol1/image1.PNG)
-![image2.PNG](../files/assets/schematic/kpcol1/image2.PNG)
+![image1.PNG](../../static/assets/schematic/kpcol1/image1.PNG)
+![image2.PNG](../../static/assets/schematic/kpcol1/image2.PNG)
 
 ### Using KPCOL1 without testpoint?
 :::warning
@@ -53,4 +53,4 @@ Only use this information if you know what you are doing!
 
 Since Motorola hasn't created a testpoint for us to do this, why not use the contact between the capacitor and the KPCOL1 line?
 
-![image3.PNG](../files/assets/schematic/kpcol1/image3.PNG)
+![image3.PNG](../../static/assets/schematic/kpcol1/image3.PNG)
