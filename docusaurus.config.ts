@@ -64,6 +64,10 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    'docusaurus-plugin-zooming',
+    'docusaurus-lunr-search'
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -124,6 +128,17 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Shomy, DiabloSat & contributors.`,
+    },
+    zooming: {
+      selector: '.markdown img',
+      delay: 500,
+      background: {
+        light: 'rgba(101,108,133,0.8)',
+        dark: 'rgba(9,10,17,0.8)'
+      },
+      options: {
+        // See the docs of zooming for all available options: https://github.com/francoischalifour/medium-zoom#usage
+      }
     },
     prism: {
       theme: prismThemes.github,
