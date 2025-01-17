@@ -1,3 +1,7 @@
+---
+title: Carrier lock
+---
+
 ## How to remove carrier lock?
 
 Carrier lock on this device is quite easy to remove, so much that even the official firmware supports this option.

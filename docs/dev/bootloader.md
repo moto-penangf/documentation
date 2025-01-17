@@ -1,3 +1,7 @@
+---
+title: Bootloader
+---
+
 ## Unlock bootloader
 
 :::note

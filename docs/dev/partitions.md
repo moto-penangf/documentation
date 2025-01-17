@@ -1,11 +1,12 @@
-# Partitions
+---
+title: Partitions
+---
 
 :::note
 Most sections are only accessible via mtkclient
 :::
 
 ## Non-empty partitions which may be of interest
-
 | Partition name                                    | Read | Write |
 |---------------------------------------------------|------|-------|
 | misc                                              | ✅    | ❌     |
@@ -61,8 +62,7 @@ Most sections are only accessible via mtkclient
 | otp                                               | ✅    | ❌     |
 
 
-
-
+## Summarizing
 This is a list of partitions that are of interest for this device:
 
 * **`lk`** -- LittleKernel partition, cannot be written with mtkclient, but only with flash tool.
@@ -77,4 +77,5 @@ This is a list of partitions that are of interest for this device:
 * **`seccfg`** -- Contains security configurations, such as SBC State (Secure boot), lock state (bootloader unlocked or not). Lock state is V4 for Moto g13/g23. Cannot be written by mtkclient from preloader.
 * **`proinfo`** -- Contains serial number. Can be written by mtkclient.
 
+## Backup
 To backup all the important partitions, use the [Backup Critical Partition](https://github.com/moto-penangf/fuckyoumoto/blob/main/backup_critical_partitions.sh) script from [DiabloSat](https://github.com/moto-penangf/fuckyoumoto/)

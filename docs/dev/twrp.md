@@ -1,4 +1,6 @@
-# TWRP (Custom Recovery)
+---
+title: TWRP (Custom Recovery)
+---
 
 :::note
 Not tested yet, we need to unlock the bootloader to boot TWRP

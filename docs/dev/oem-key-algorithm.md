@@ -1,4 +1,7 @@
-# OEM key generation algorithm
+---
+title: OEM key algorithm
+---
+
 :::note
 In the process of learning new information. The information may be incorrect.
 

@@ -1,4 +1,6 @@
-## Tools and Links
+---
+title: Tools and Links
+---
 
 This is a list of tools that helped during the research of information for bootloader unlocking
 

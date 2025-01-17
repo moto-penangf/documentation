@@ -1,4 +1,8 @@
-# Preloader mode
+---
+title: Preloader
+---
+
+
 ![boot-scheme1.png](../files/assets/boot-scheme1.png)
 
 MTK Preloader **is a low-level mode activated after the BROM (Boot ROM)** load on MediaTek devices.

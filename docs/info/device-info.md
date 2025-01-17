@@ -1,4 +1,6 @@
-## Device Info
+---
+title: Device Info
+---
 
 **SoC**: MediaTek Helio G85 (MT6769V/CZ), arm64<br/>
 **Codename**: penangf <br/>

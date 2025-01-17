@@ -1,4 +1,7 @@
-## Firmware rollback
+---
+title: Firmware rollback
+---
+
 :::note
 ANTI_ROLLBACK protection is activated in our device, so this is not possible at the moment!
 :::

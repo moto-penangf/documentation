@@ -1,4 +1,6 @@
-## About
+---
+title: About
+---
 
 :::warning
 **MOTOROLA SHITTY FIRMWARE WARNING**

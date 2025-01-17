@@ -1,4 +1,6 @@
-## AVB (Android Verify Boot)
+---
+title: AVB (Android Verify Boot)
+---
 
 ### What is AVB?
 AVB (Android Verified Boot) is a technology that verifies the integrity of the Android system at boot. It ensures that system partitions have not been modified using cryptographic signatures. If the verification fails, the device may not boot.

@@ -1,4 +1,6 @@
-# PCS mode
+---
+title: PCS
+---
 
 :::warning
 We are actively trying to learn more about this mode, if you have any information that you think might be useful - [send a message in the forum topic “PCS Mode”](https://github.com/orgs/moto-penangf/discussions/8)

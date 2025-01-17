@@ -1,4 +1,6 @@
-# Testpoints
+---
+title: Testpoints
+---
 
 ## Moto G23
 

@@ -1,4 +1,7 @@
-# Disassembly guide
+---
+title: Disassembly guide
+---
+
 ## Required
 - **Thin spudger tool for phone disassembly** (≈ 1$ | 42₴)
 - **Plastic spudger** (≈ 1$ | 42₴)

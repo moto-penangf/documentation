@@ -1,3 +1,7 @@
+---
+title: Meta
+---
+
 ### Access metamode
 
 Metamode can be accessed thanks to `Android Utility` (See [Tools](../dev/tools.md).<br/>

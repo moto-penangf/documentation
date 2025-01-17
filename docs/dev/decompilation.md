@@ -1,5 +1,6 @@
-# Decompilation of LK and preloader
-
+---
+title: Decompilation
+---
 
 :::note
 The following information is yet to be verified.<br/>
@@ -7,7 +8,7 @@ Some inaccuracy is possible.<br/>
 Act at your own risk.<br/>
 :::
 
-## preloader
+## Preloader
 
 From the decompilation of the [preloader](https://github.com/moto-penangf/fuckyoumoto/raw/refs/heads/main/sources/preloader_penangf.bin), we get some really interesting information about brom.
 

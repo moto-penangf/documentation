@@ -1,3 +1,7 @@
+---
+title: Logs
+---
+
 ## Get boot logs
 
 Clone the [workarounds script repo](https://github.com/moto-penangf/fuckyoumoto) and poweroff your phone.

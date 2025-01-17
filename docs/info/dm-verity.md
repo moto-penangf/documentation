@@ -1,3 +1,7 @@
+---
+title: DM-Verity
+---
+
 ## How did I get dm-verity?
 
 There are various way to get a dm-verity error on this device.

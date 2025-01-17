@@ -1,4 +1,6 @@
-# Fastboot
+---
+title: Fastboot
+---
 
 ## Boot to Fastboot mode
 There are many ways to boot into Fastboot mode, you can use one of the last complicated ways if for some reason you can't boot into Fastboot.
