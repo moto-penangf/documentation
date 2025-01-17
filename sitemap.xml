@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://moto-penangf.github.io/documentation</loc>
-    <lastmod>2025-01-17T12:53:42Z</lastmod>
+    <lastmod>2025-01-17T19:29:03Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/modes/fastboot</loc>
+    <lastmod>2025-01-17T19:14:42Z</lastmod>
   </url>
    
   <url>
@@ -22,11 +27,6 @@
    
   <url>
     <loc>https://moto-penangf.github.io/documentation/docs/modes/pcs</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/modes/fastboot</loc>
     <lastmod>2025-01-17T12:08:44Z</lastmod>
   </url>
    
