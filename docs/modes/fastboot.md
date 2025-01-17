@@ -47,7 +47,7 @@ There are many ways to boot into Fastboot mode, you can use one of the last comp
 ### Access fastbootd:
 To access fastbootd, you can run `adb reboot fastboot` while the device is booted normally.
 
-:::warining
+:::warning
 > DO NOT reboot to fastbootd from fastboot, as it may cause a dm-verity error due to a glitch.
 :::
 
