@@ -9,7 +9,7 @@
 
 This documentation is dedicated to discoveries made by me and other people interested in unlocking the Moto G23 and Moto G13 bootloader.
 
-![Image](files/assets/sticker2.png)
+![Image](static/assets/sticker2.png)
 
 ## Contributing
 
