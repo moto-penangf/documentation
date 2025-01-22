@@ -34,7 +34,7 @@ Located in easy access, near the fingerprint slot
 ### Testpoint test results
 | Action                                                                                            | Result                                                                   |
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| KPCOL0 + GND and connection to a PC                                                               | [Boot to Fastboot mode](../modes/fastboot.md)                            |
+| KPCOL0 + GND and connection to a PC                                                               | [Boot to Fastboot mode](../modes/fastboot.mdx)                            |
 | KPCOL0 + GND and connection to PC without battery                                                 | Bootloop in [Preloader mode](../modes/preloader.md), fastboot won't boot |
 | Connect to PC and during the picture with gray battery<br/> icon short the testpoint KPCOL0 + GND | [Boot to PCS MIDI mode](../modes/pcs.md)                                 |
 
