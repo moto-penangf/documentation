@@ -29,9 +29,7 @@ Unfortunately, modifying the DA file does not grant more rights or access than w
 This limitation protects the device from unauthorized modifications and ensures the security of the process, which, unfortunately, significantly limits our capabilities and causes issues in this case. :(
 
 ## Download Agent authorization (DAA)
-It is sufficient to load the Download Agent once to use its commands thereafter. For example, you can load the standard DA agent first, and then load a custom one.
-
-However, it is currently unclear whether commands are executed through the custom agent or if the first loaded agent continues to be used.
+It is sufficient to load the Download Agent once to use its commands thereafter.
 
 ```shell
 $ mtk printgpt --loader ./sources/MT6768_USER.bin
@@ -98,7 +96,7 @@ DaHandler - Dumping partition "lk_a"
 Progress: |██████████| 100.0% Read (0x1000/0x1000, ) 22.08 MB/s
 DaHandler - Dumped sector 933888 with sector count 4096 as lk_a.
 ```
-### After the initial loading of the signed DA, we can attempt to execute commands from another DA. However, it is unclear which one is being used at the moment.
+### After the initial loading of the signed DA, we can attempt to execute commands from another DA. However, once the phone enters DA mode, even if we specify another Download Agent, only the one sent to the phone will be used.
 ```sh
 $ mtk r lk_a lk_a --loader ./sources/MTK_AllInOne_DA.bin
 MTK Flash/Exploit Client Public V2.0.1 (c) B.Kerler 2018-2024
