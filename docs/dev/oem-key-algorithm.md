@@ -22,6 +22,12 @@ If you have any information that you think might be useful - [send a message in 
 ## MD5 Hash?
 [MD5 Hash online generator](https://www.md5hashgenerator.com/)
 
+:::warning
+After decompiling lk, it appears the function which checks the key uses sha256, not md5.
+
+Read directly from [sha256](#sha256). 
+:::
+
 There is a possibility that the OEM key is an md5 hash, because when generating the hash (no matter how many characters) we get the same length as a valid OEM key
 
 | String               | MD5 Hash                          | Length |
@@ -45,8 +51,19 @@ Some notes:
 * Fastboot for some reason wants `fastboot oem key` to be run before flashing unlock, or it won't fill the SoC ID into the stack to hash it later. 
 
 * Only the first 32 characters of the hash are used 
-* The string is compared for the first 32 characters, after that it doesn't get check (it cannot be exploited though as we must use 32 character unlock keys anyway to feed the key to fastboot) 
+* The string is compared for the first 32 characters, after that it doesn't get check (it cannot be exploited though as we must use 32 character unlock keys anyway to feed the key to fastboot)
 
+The theoretical algorithm for bootloader unlocking is the following:
+* Feed key to fastboot using `fastboot oem key <KEY>`
+* Fastboot verifies if the size of the key is equal to 32, and if it does, the key is copied into a global buffer
+* Ask fastboot for unlocking the bootloader triggers the main unlock loop (`fastboot flashing unlock`
+* Fastboot asks for confirmation from the user using the Volume Up key
+* After confirmation, some checks are done:
+   - If OEM unlocking is enabled in the settings
+   - If the bootloader is already unlocked
+   - If the key is correct
+* For the key to be correct, the first part of the SOC ID (fastboot oem get_socid) is hashed through a sha256 function, and then copied into a buffer where it's still unclear if some bitshifting is done before copying. Finally, if the first 32 characters of the provided key and the buffer containing the hashed SOC ID match, the "Unlock Success" message is printed out. 
+* After verifying the conditions needed, fastboot performs a wipe of userdata and frp, and then calls `sec_platform_set_lock_status(0)` to set the bootloader unlock status to Unlocked.
 
 ## Useful links
 - [mt6765 little-kernel source code](https://github.com/moto-penangf/lk-mt6765)
