@@ -69,7 +69,7 @@ By analyzing the logs, we were able to assign the following values to the keys:
 
 | Key | Value |
 | --- | ----- |
-| [KPCOL0](./testpoints.md#front) | 0  |
+| [KPCOL0](./testpoints.mdx#front) | 0  |
 | Vol- (KPCOL1)|  1   |
 | Pwr  |  8   |
 | Vol+ (HOMEKEY)| 17   |

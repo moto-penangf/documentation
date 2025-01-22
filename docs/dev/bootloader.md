@@ -159,4 +159,4 @@ I suspect to enable UART we need to run `fastboot oem p2u` first.
 
 
 
-The list of the testpoints I've found is [here](testpoints.md).
+The list of the testpoints I've found is [here](testpoints.mdx).

@@ -1,0 +1,55 @@
+---
+title: Testpoints
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+import frontImg from "@site/static/assets/testpoints/mainboard-front.png";
+import backImg from "@site/static/assets/testpoints/mainboard-back.png";
+import emmcImg from "@site/static/assets/testpoints/eMMC_test_points.png";
+import jtagImg from "@site/static/assets/testpoints/jtag.png";
+
+## Moto G23
+
+<Tabs>
+    <TabItem value="0" label="MB FRONT" default>
+        :::info
+        FRONT PICTURE PROVIDED BY [DiabloSat](https://github.com/progzone122)
+        :::
+        <img src={frontImg} />
+    </TabItem>
+    <TabItem value="1" label="MB BACK" default>
+        :::info
+        BACK PICTURE COMES FROM [THIS VIDEO](https://www.youtube.com/watch?v=Y-8yj6qbFQ4)
+        :::
+        <img src={backImg} />
+    </TabItem>
+    <TabItem value="2" label="eMMC" default>
+        :::warning
+
+        **CLK**, **DAT0** and **CMD** could all be testpoints to access BROM.
+
+        These points still haven't been tested though.
+
+
+        DON'T use these points if you don't know what you're doing.
+
+
+        Update: We're not sure yet if these are the correct TP, or if they are TP at all, click [here](https://github.com/orgs/moto-penangf/discussions/1#discussioncomment-11779194) for more information.<br/>
+
+        DO NOT ATTEMPT TO USE THEM.
+
+        :::
+        <img src={emmcImg} />
+    </TabItem>
+    <TabItem value="3" label="JTAG" default>
+        :::info
+        ISP (JTAG) TESTPOINTS PICTURE COMES FROM [THIS LINK](https://forum.gsmhosting.com/vbb/f1146/moto-g13-3248560/)
+        :::
+        <img src={jtagImg} />
+    </TabItem>
+</Tabs>
+
+## More testpoints?
+Also, although we don't have testpoints for this, we still have the ability to access [KPCOL1](../schematic/keypad.md#kpcol1), [PWRKEY_SW](../schematic/control-if.md#pwrkey_sw), [HOMEKEY_SW](../schematic/control-if.md#homekey_sw).
