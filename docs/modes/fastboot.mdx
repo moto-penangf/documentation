@@ -74,7 +74,7 @@ There are many ways to boot into Fastboot mode, you can use one of the last comp
 To access fastbootd, you can run `adb reboot fastboot` while the device is booted normally.
 
 :::warning
-> DO NOT reboot to fastbootd from fastboot, as it may cause a dm-verity error due to a glitch.
+DO NOT reboot to fastbootd from fastboot, as it may cause a dm-verity error due to a glitch.
 :::
 
 :::warning
@@ -88,10 +88,10 @@ fastboot getvar all
 fastboot flashing get_unlock_ability
 fastboot flashing unlock
 fastboot reboot
-fastboot oem key <KEY>
-fastboot oem get_key
-fastboot oem get_socid
-fastboot oem p2u <on/off> # sets UART logs
+fastboot oem key <KEY> # Feeds the key for bootloader unlocking
+fastboot oem get_key # Returns the first part of the soc id. Used in bootloader unlocking
+fastboot oem get_socid # Returns the unique id of the SoC
+fastboot oem p2u <on/off> # enabled or disables UART logging
 fastboot oem dump_pllk_log # dumps preloader and lk logs
 fastboot oem lks # Return the lockstate (1 -> locked, 0 -> unlocked)
 fastboot oem scp_status # Crashes fastboot
