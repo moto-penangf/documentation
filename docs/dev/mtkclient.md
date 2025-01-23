@@ -66,6 +66,27 @@ Error on sending parameter: Write data not allowed (0xc002000c)
 ```
 [Read full debug logs](https://github.com/user-attachments/files/18427911/da_pl_no_cert_flash_lk.txt)
 
+## Partition seccfg modifying
+No access to writing seccfg section via DA_PL_NO_CERT or MT6768_USER
+
+````shell
+$ mtk da seccfg unlock --loader sources/MT6768_USER.bin
+...
+DAXFlash - [LIB]: Error on sending parameter: Write data not allowed (0xc002000c)
+````
+````shell
+$ mtk da seccfg unlock --loader sources/DA_PL_NO_CERT_V6.bin
+...
+DAXFlash - [LIB]: Error on sending parameter: Write data not allowed (0xc002000c)
+````
+````shell
+$ mtk.py wo 0x1c800000 0x200000 backups/lk_a.img --loader sources/DA_PL_NO_CERT_V6.bin 
+...
+DAXFlash - [LIB]: Error on sending parameter: Write data not allowed (0xc002000c)
+Failed to write backups/lk_a.img to offset 0x1c800000 with length 0x200000.
+````
+[Read full debug logs](https://github.com/user-attachments/files/18427911/da_pl_no_cert_flash_lk.txt)
+
 ## Force BROM
 Unfortunately, it looks like the firmware contains a patched Preloader, and in the event of a crash, the phone just hangs in Preloader without going to BROM.
 
