@@ -29,4 +29,4 @@ Unfortunately, modifying the DA file does not grant more rights or access than w
 This limitation protects the device from unauthorized modifications and ensures the security of the process, which, unfortunately, significantly limits our capabilities and causes issues in this case. :(
 
 ## MtkClient
-You can find information about trying with mtkclient [here](../dev/mtkclient.md)
+Information on attempts to bypass using mtkclient can be found [here](../dev/mtkclient.md)
