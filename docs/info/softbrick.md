@@ -1,6 +1,6 @@
-------
+---
 title: Fix softbricks
-------
+---
 
 ## What is a softbrick
 
