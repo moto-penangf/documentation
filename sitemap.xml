@@ -2,137 +2,137 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://moto-penangf.github.io/documentation</loc>
-    <lastmod>2025-01-17T19:29:03Z</lastmod>
+    <lastmod>2025-01-24T12:03:04Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/modes/fastboot</loc>
-    <lastmod>2025-01-17T19:14:42Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/schematic/keypad</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/schematic/control-if</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/modes/preloader</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/modes/pcs</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/firmware-rollback</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/disassembly</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/avb</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/testpoints</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/oem-key-algorithm</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/about</loc>
-    <lastmod>2025-01-17T12:08:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/modes/metamode</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/dm-verity</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/device-info</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/carrier_lock</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/twrp</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/tools</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/partitions</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
+    <loc>https://moto-penangf.github.io/documentation/docs/info/softbrick</loc>
+    <lastmod>2025-01-24T12:03:04Z</lastmod>
   </url>
    
   <url>
     <loc>https://moto-penangf.github.io/documentation/docs/dev/logs</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/decompilation</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
+    <lastmod>2025-01-24T11:44:33Z</lastmod>
   </url>
    
   <url>
     <loc>https://moto-penangf.github.io/documentation/docs/dev/bootloader</loc>
-    <lastmod>2025-01-17T11:57:18Z</lastmod>
+    <lastmod>2025-01-24T11:27:07Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/src/pages/markdown-page</loc>
-    <lastmod>2025-01-17T01:12:21Z</lastmod>
+    <loc>https://moto-penangf.github.io/documentation/docs/dev/mtkclient</loc>
+    <lastmod>2025-01-23T15:14:29Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/blog/2021-08-26-welcome/index</loc>
-    <lastmod>2025-01-17T01:12:21Z</lastmod>
+    <loc>https://moto-penangf.github.io/documentation/docs/modes/preloader</loc>
+    <lastmod>2025-01-23T15:00:53Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/blog/2019-05-29-long-blog-post</loc>
-    <lastmod>2025-01-17T01:12:21Z</lastmod>
+    <loc>https://moto-penangf.github.io/documentation/docs/dev/oem-key-algorithm</loc>
+    <lastmod>2025-01-22T22:10:15Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/blog/2019-05-28-first-blog-post</loc>
-    <lastmod>2025-01-17T01:12:21Z</lastmod>
+    <loc>https://moto-penangf.github.io/documentation/docs/dev/decompilation</loc>
+    <lastmod>2025-01-22T14:27:44Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/schematic/keypad</loc>
+    <lastmod>2025-01-22T13:25:45Z</lastmod>
   </url>
    
   <url>
     <loc>https://moto-penangf.github.io/documentation/README</loc>
-    <lastmod>2025-01-12T23:23:14Z</lastmod>
+    <lastmod>2025-01-21T23:50:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/src/pages/markdown-page</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/schematic/control-if</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/modes/pcs</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/modes/metamode</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/info/firmware-rollback</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/info/dm-verity</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/info/disassembly</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/info/device-info</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/info/carrier_lock</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/info/avb</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/dev/twrp</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/dev/tools</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/dev/partitions</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/docs/about</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/blog/2021-08-26-welcome/index</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/blog/2019-05-29-long-blog-post</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://moto-penangf.github.io/documentation/blog/2019-05-28-first-blog-post</loc>
+    <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
   
 </urlset>
