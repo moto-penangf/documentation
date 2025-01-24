@@ -41,7 +41,7 @@ $ fastboot flashing get_unlock_ability
 (bootloader) unlock_ability = 16777216
 ```
 
-In this case the number is equal to 2^24 (24th bit), which seem to mean **unlockable under certain conditions**
+In this case the number is equal to 2^24 (24th bit), which seem to either mean **unlockable under certain conditions**, or simply an overflow/bug in fastboot when the bootloader can be unlocked. 
 
 The device has a mediatek SoC, so trying with the flashing unlock command:
 
@@ -102,6 +102,30 @@ FAILED (remote: 'Unlock key code is incorrect!')
 fastboot: error: Command failed
 ```
 
+Something interesting happens when installing a key without first doing `fastboot oem get_key`, and then running `fastboot flashing unlock`
+
+```sh
+$ fastboot oem key **1A****042B2A****97***60C***FBC
+(bootloader) open fastboot unlock
+OKAY [  0.000s]
+Finished. Total time: 0.000s
+
+$ fastboot flashing unlock
+(bootloader) Start unlock flow
+
+(bootloader)
+(bootloader) start fastboot unlock
+(bootloader) **1A****042B2A****97***60C***FBC
+FAILED (remote: 'Unlock key code is incorrect!')
+fastboot: error: Command failed
+```
+
+The first line (which is the key fastboot knoes and has to verify against the second key appearing) is completely empty. 
+
+Decompiling LK it's clear that it suppose to be filled by the key (which is also the first part of the SoC ID) that has to be stored inside the global variable before everything else. 
+
+I suspect there's a possibility that fastboot hashes an empty 32 character buffer, and could possibly lead to some exploitation of either the sha256 function or the copy of the hash into a temporary buffer. 
+This has to be investigated further.
 
 
 ### Using mtkclient
