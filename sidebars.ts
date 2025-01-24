@@ -27,7 +27,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Info',
-      items: ['info/device-info', 'info/carrier_lock', 'info/firmware-rollback', 'info/avb', 'info/dm-verity', 'info/disassembly']
+      items: ['info/device-info', 'info/carrier_lock', 'info/firmware-rollback', 'info/avb', 'info/softbrick', 'info/dm-verity', 'info/disassembly']
     },
     {
       type: 'category',
