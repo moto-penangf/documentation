@@ -1,3 +1,7 @@
+------
+title: Fix softbricks
+------
+
 ## What is a softbrick
 
 A softbrick is when a phone doesn't want to bootup making it unable to boot into system or fastboot. Generally with penangf, the phone just throws a dm-verity error, but it may happen sometimes that it might stop booting at all.
