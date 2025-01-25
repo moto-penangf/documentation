@@ -1,4 +1,6 @@
-## Frequently asked questions
+---
+title: Frequently asked questions
+---
 
 ### How can I unlock the bootloader?
 
