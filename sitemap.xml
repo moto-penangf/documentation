@@ -1,142 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://moto-penangf.github.io/documentation</loc>
+    <loc>https://penangf.fuckyoumoto.xyz</loc>
+    <lastmod>2025-01-25T21:03:07Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/decompilation</loc>
+    <lastmod>2025-01-25T12:12:29Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/faq</loc>
     <lastmod>2025-01-25T07:06:50Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/faq</loc>
-    <lastmod>2025-01-25T07:06:50Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/bootloader</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/bootloader</loc>
     <lastmod>2025-01-25T04:41:13Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/softbrick</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/softbrick</loc>
     <lastmod>2025-01-24T12:03:04Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/logs</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/logs</loc>
     <lastmod>2025-01-24T11:44:33Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/mtkclient</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/mtkclient</loc>
     <lastmod>2025-01-23T15:14:29Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/modes/preloader</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/modes/preloader</loc>
     <lastmod>2025-01-23T15:00:53Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/oem-key-algorithm</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/oem-key-algorithm</loc>
     <lastmod>2025-01-22T22:10:15Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/decompilation</loc>
-    <lastmod>2025-01-22T14:27:44Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/schematic/keypad</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/schematic/keypad</loc>
     <lastmod>2025-01-22T13:25:45Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/README</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/README</loc>
     <lastmod>2025-01-21T23:50:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/src/pages/markdown-page</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/src/pages/markdown-page</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/schematic/control-if</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/schematic/control-if</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/modes/pcs</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/modes/pcs</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/modes/metamode</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/modes/metamode</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/firmware-rollback</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/firmware-rollback</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/dm-verity</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/dm-verity</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/disassembly</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/disassembly</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/device-info</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/device-info</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/carrier_lock</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/carrier_lock</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/info/avb</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/avb</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/twrp</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/twrp</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/tools</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/tools</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/dev/partitions</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/partitions</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/docs/about</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/about</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/blog/2021-08-26-welcome/index</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/blog/2021-08-26-welcome/index</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/blog/2019-05-29-long-blog-post</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/blog/2019-05-29-long-blog-post</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
    
   <url>
-    <loc>https://moto-penangf.github.io/documentation/blog/2019-05-28-first-blog-post</loc>
+    <loc>https://penangf.fuckyoumoto.xyz/blog/2019-05-28-first-blog-post</loc>
     <lastmod>2025-01-17T22:48:54Z</lastmod>
   </url>
   
