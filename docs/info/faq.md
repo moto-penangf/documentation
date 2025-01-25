@@ -11,7 +11,7 @@ You can't without bootloader unlocking.
 
 ### My phone doesn't turn on anymore after I run a command, what should I do?
 
-You got a softbrick. Refer to [How to fix softbricks](info/softbricks.md)
+You got a softbrick. Refer to [How to fix softbricks](info/softbrick.md)
 
 ### Why do my phone show a dm-verity error every time I boot the phone up? 
 
