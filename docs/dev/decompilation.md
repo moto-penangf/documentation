@@ -3,7 +3,6 @@ title: Decompilation
 ---
 
 :::note
-The following information is yet to be verified.<br/>
 Some inaccuracy is possible.<br/>
 Act at your own risk.<br/>
 :::
@@ -126,7 +125,9 @@ bool mtk_detect_key(int key)
 }
 ```
 
-Based on these information, **there's a chance that we might get brom by pressing the following combination**: `KPCOL0 (TP) + Pwr + Vol+`
+Based on these information, **there should be the chance to get into brom by pressing the following combination**: `KPCOL0 (TP) + Pwr + Vol+`. 
+However, many tests have confirmed the inability of the phone to access BROM mode, making this discovery not that useful. 
+
 
 
 
