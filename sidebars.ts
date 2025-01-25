@@ -47,7 +47,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'doc',
       label: 'FAQ',
-      href: 'info/faq'
+      id: 'info/faq'
     },
     {
       type: 'link',
