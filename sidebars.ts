@@ -45,7 +45,7 @@ const sidebars: SidebarsConfig = {
       items: ['schematic/keypad', 'schematic/control-if']
     },
     {
-      type: 'link',
+      type: 'doc',
       label: 'FAQ',
       href: 'info/faq'
     },
