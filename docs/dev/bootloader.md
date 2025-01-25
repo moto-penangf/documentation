@@ -124,9 +124,8 @@ The first line (which is the key fastboot knoes and has to verify against the se
 
 Decompiling LK it's clear that it suppose to be filled by the key (which is also the first part of the SoC ID) that has to be stored inside the global variable before everything else. 
 
-I suspect there's a possibility that fastboot hashes an empty 32 character buffer, and could possibly lead to some exploitation of either the sha256 function or the copy of the hash into a temporary buffer. 
-This has to be investigated further.
-
+I suspect there's a possibility that fastboot hashes an empty 32 character buffer, and could possibly lead to some exploitation of either the sha256 function or the copy of the hash into a temporary buffer.<br/>
+It is confirmed that feeding the first 32 characters of the hash of an empty string as the key doesn't unlock the bootloader.
 
 ### Using mtkclient
 
