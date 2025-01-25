@@ -28,9 +28,9 @@ import jtagImg from "@site/static/assets/testpoints/jtag.png";
     <TabItem value="2" label="eMMC" default>
         :::warning
 
-        **CLK**, **DAT0** and **CMD** could all be testpoints to access BROM.
+        **CLK**, **DAT0** and **CMD** usually are testpoints to access BROM.
 
-        These points still haven't been tested though.
+        However, it seems like BROM is disabled by fuse, so shorting them to ground just makes the phone hang without any response until the short is removed.
 
 
         DON'T use these points if you don't know what you're doing.
