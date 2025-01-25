@@ -46,6 +46,11 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'link',
+      label: 'FAQ',
+      href: 'info/faq'
+    } 
+    {
+      type: 'link',
       label: 'Forum (More info)',
       href: 'https://github.com/orgs/moto-penangf/discussions'
     }
