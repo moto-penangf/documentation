@@ -69,18 +69,15 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    metadata: [
+      {name: 'google-site-verification', content: 'JwvjsCql0XAVN_XhSgpLGynq8j-tMFMato0OjuG-_Us'},
+    ],
     navbar: {
       title: 'Motorola G23/G13',
       // logo: {
       //   alt: 'My Site Logo',
       //   src: 'img/logo.svg',
       // },
-      metadata: [
-        {
-          name: 'google-site-verification',
-          content: 'JwvjsCql0XAVN_XhSgpLGynq8j-tMFMato0OjuG-_Us',
-        },
-      ],
       items: [
         {
           type: 'docSidebar',
