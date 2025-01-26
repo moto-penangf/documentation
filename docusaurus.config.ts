@@ -75,6 +75,12 @@ const config: Config = {
       //   alt: 'My Site Logo',
       //   src: 'img/logo.svg',
       // },
+      metadata: [
+        {
+          name: 'google-site-verification',
+          content: 'JwvjsCql0XAVN_XhSgpLGynq8j-tMFMato0OjuG-_Us',
+        },
+      ],
       items: [
         {
           type: 'docSidebar',
