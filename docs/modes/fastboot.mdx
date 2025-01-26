@@ -10,12 +10,18 @@ import startedImg from '@site/static/assets/fastboot/started.JPG';
 import switchConsoleImg from '@site/static/assets/fastboot/switch_console.JPG';
 import logsImg from '@site/static/assets/fastboot/logs.JPG';
 
+import { commands } from "./fastboot_commands.js";
+
 :::warning
-DO NOT reboot to fastbootd from fastboot, as it may cause a dm-verity error due to a glitch.
+**DO NOT reboot to fastbootd from fastboot**, as it may cause a dm-verity error due to a glitch.
+:::
 
-DO NOT USE "fastboot reboot fastboot" to reboot into fastbootd, you will get a soft brick!
+:::warning
+**DO NOT USE ```fastboot reboot fastboot```** to reboot into fastbootd, you will get a soft brick!
+:::
 
-To fix the brick, reflash all small files from the firmware, excluding super, from SP Flash Tool or mtkclient. 
+:::info
+To fix the soft brick, [follow these instructions](../info/softbrick.md)
 ::: 
 
 ## Screenshots
@@ -83,22 +89,21 @@ To access fastbootd, you can run `adb reboot fastboot` while the device is boote
 
 
 ### Available commands
-
-```sh
-fastboot getvar all
-fastboot flashing get_unlock_ability
-fastboot flashing unlock
-fastboot reboot
-fastboot oem key <KEY> # Feeds the key for bootloader unlocking
-fastboot oem get_key # Returns the first part of the soc id. Used in bootloader unlocking
-fastboot oem get_socid # Returns the unique id of the SoC
-fastboot oem p2u <on/off> # enabled or disables UART logging
-fastboot oem dump_pllk_log # dumps preloader and lk logs
-fastboot oem lks # Return the lockstate (1 -> locked, 0 -> unlocked)
-fastboot oem scp_status # Crashes fastboot
-fastboot oem scp_log_thru_ap_uart <1/0> # Redirects SCP (I don't know what it is) to UART
-fastboot oem usb2jtag <1/0> # I think it allows to use a modded usb cable as a JTAG?
-```
+{commands.map((item, index) => (
+<details key={index} className="custom-details" style={{marginBottom: 20}}>
+    <summary>
+        <code>{item.command}</code>
+    </summary>
+    <div className={"content"}>
+        <br />
+        <p><strong>Description:</strong> {item.description}</p>
+        <p><strong>Output:</strong></p>
+        <pre>
+        <code>{item.output}</code>
+      </pre>
+    </div>
+</details>
+))}
 
 :::info
 On the moto g23 and g13, `fastboot flashing unlock_critical` doesn't exist, and instead treats `_critical` as the buffer for

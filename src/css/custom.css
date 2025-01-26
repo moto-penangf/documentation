@@ -36,3 +36,19 @@ strong {
 .footer--dark {
   --ifm-footer-background-color: #242526;
 }
+
+.custom-details summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.custom-details pre {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.custom-details {
+  padding-left: 24px;
+}
+.custom-details .content {
+  padding-left: 24px;
+}
