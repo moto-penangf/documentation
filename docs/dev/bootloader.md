@@ -176,8 +176,9 @@ Though, we would need to use it in combination with two other keys: Power and Vo
 
 
 **UART:**<br/>
-[Almost bricked a device.](https://github.com/moto-penangf/penangf-schematics/issues/1)
+To use UART, refer to [UART](/dev/uart.md)<br/>
 Further testing is needed.<br/>
+
 I suspect to enable UART we need to run `fastboot oem p2u` first.
 
 
