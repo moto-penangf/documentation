@@ -257,6 +257,11 @@ Rebooting                                          OKAY [  0.000s]
 Finished. Total time: 0.050s`
 },
   {
+    command: "fastboot oem shutdown",
+    description: "Shutdown the phone",
+    output: ``
+  },
+  {
     command: "fastboot oem key <KEY>",
     description: "Set bootloader unlock key",
     output: `$ fastboot oem key 061A757D042B2A378D9761E60C9D3FBC
