@@ -14,3 +14,8 @@ To enable UART, it is necessary to remove the protective metal shield and solder
 
 ## Testpoints
 ![testpoints.png](../../static/assets/uart/testpoints.png)
+
+## UART baud rate setting
+
+For preloader logs, set the baud rate to `921600`.
+For BROM logs, set the baud rate to `115200`.
