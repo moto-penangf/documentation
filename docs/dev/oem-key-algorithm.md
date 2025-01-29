@@ -15,7 +15,7 @@ If you have any information that you think might be useful - [send a message in 
 
 ## Known information about the key
 1. Key length 32 symbols
-2. The key can only consist of numbers and Cyrillic letters
+2. The key can only consist of numbers and letters from A to F letters
 3. Very similar to an MD5 hash
 4. In theory, the **serial number / IMEI / output of the ```fastboot oem get_socid```** command can be used for generation key
 
