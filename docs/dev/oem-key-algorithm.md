@@ -45,6 +45,10 @@ This can be useful for key generation
 
 ## sha256?
 
+:::note
+An experimental script for generating the unlock key is available [here](https://github.com/moto-penangf/fuckyoumoto/blob/main/oem_keygen.py). We still don't know if it works, it has to be tested. This was made possible by the decompilation of the lk binary.
+:::
+
 After further analysis of the inner function of fastboot, it looks like the first 32 characters of soc_id are used for bootloader unlocking (hence why we're probably allowed to change the serial number without succeeding in exploiting this for bootloader unlock).
 
 Some notes:
