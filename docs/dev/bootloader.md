@@ -169,10 +169,7 @@ So unfortunately not even that works.
 Testpoints are [still being investigated](https://github.com/orgs/moto-penangf/discussions/1).
 
 **BROM:**<br/>
-As for now, we're investigating the possibility of accessing brom through a combination of keys (read [decompilation](/dev/decompilation.md)).<br/>
-The suspected TP for BROM is KPCOL0, located at the back of the board.<br/>
-
-Though, we would need to use it in combination with two other keys: Power and Vol+.
+BROM mode has been confirmed to have been disabled by efuse, so we cannot access it.
 
 
 **UART:**<br/>
