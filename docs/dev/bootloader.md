@@ -5,6 +5,8 @@ title: Bootloader
 ## Unlock bootloader
 
 :::note
+UPDATE: Currently, research is going onto either exploiting lk or generating a key for fastboot. The latter is currently being investigated the most. Read "OEM Key generation" for updates.
+
 Currently there's no known way to unlock the bootloader.<br/>
 Investigations are going on to figure out how to unlock it, check the forum and updates in this documentation.
 :::
