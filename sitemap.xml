@@ -2,7 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://penangf.fuckyoumoto.xyz</loc>
-    <lastmod>2025-01-25T21:03:07Z</lastmod>
+    <lastmod>2025-01-31T16:49:09Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/paks</loc>
+    <lastmod>2025-01-31T16:49:09Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/mtkclient</loc>
+    <lastmod>2025-01-31T14:44:19Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/bootloader</loc>
+    <lastmod>2025-01-30T17:55:50Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/uart</loc>
+    <lastmod>2025-01-29T14:15:14Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/oem-key-algorithm</loc>
+    <lastmod>2025-01-29T09:24:45Z</lastmod>
   </url>
    
   <url>
@@ -16,11 +41,6 @@
   </url>
    
   <url>
-    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/bootloader</loc>
-    <lastmod>2025-01-25T04:41:13Z</lastmod>
-  </url>
-   
-  <url>
     <loc>https://penangf.fuckyoumoto.xyz/docs/info/softbrick</loc>
     <lastmod>2025-01-24T12:03:04Z</lastmod>
   </url>
@@ -31,18 +51,8 @@
   </url>
    
   <url>
-    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/mtkclient</loc>
-    <lastmod>2025-01-23T15:14:29Z</lastmod>
-  </url>
-   
-  <url>
     <loc>https://penangf.fuckyoumoto.xyz/docs/modes/preloader</loc>
     <lastmod>2025-01-23T15:00:53Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/oem-key-algorithm</loc>
-    <lastmod>2025-01-22T22:10:15Z</lastmod>
   </url>
    
   <url>
