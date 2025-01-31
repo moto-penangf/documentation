@@ -14,6 +14,10 @@ This documentation is dedicated to discoveries made by me and other people inter
 
 ![Image](../static/assets/sticker2.png)
 
+## Quick Links
+- [Bootloader unlock](dev/bootloader.md)
+- [FAQ](info/faq.md)
+
 ## Contributing
 
 For any new discovery made that is still not on this documentation, please send a Pull Request or open an issue on [our documentation repo](https://github.com/moto-penangf/documentation) describing the discovery.<br/>
