@@ -3,13 +3,12 @@ title: Frequently asked questions
 ---
 
 ### How can I unlock the bootloader?
+Read [Bootloader unlock](../dev/bootloader.md#bootloader-unlock)
 
-As for now, there's no known way to unlock the bootloader. We're extensively trying to find a way to unlock the phone.
+[//]: # (### How do I get root?)
 
-
-### How do I get root?
-
-You can't without bootloader unlocking.
+[//]: # ()
+[//]: # (You can't without bootloader unlocking.)
 
 ### My phone doesn't turn on anymore after I run a command, what should I do?
 
@@ -27,9 +26,10 @@ To fix it, refer to [dm-verity](info/dm-verity.md)
 We still don't know.
 
 
-### How can I install a custom rom?
+[//]: # (### How can I install a custom rom?)
 
-You can't until we find how to unlock the bootloader.
+[//]: # ()
+[//]: # (You can't until we find how to unlock the bootloader.)
 
 ### My phone is slow, can I downgrade to an older firmware version?
 
