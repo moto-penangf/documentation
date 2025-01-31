@@ -5,19 +5,77 @@ title: Bootloader
 ## Unlock bootloader
 
 :::note
-UPDATE: Currently, research is going onto either exploiting lk or generating a key for fastboot. The latter is currently being investigated the most. Read "OEM Key generation" for updates.
+[Updated 31.01.2025]
 
-Currently there's no known way to unlock the bootloader.<br/>
-Investigations are going on to figure out how to unlock it, check the forum and updates in this documentation.
+We finally managed to find out the key generation algorithm and you can unlock the bootloader via fastboot!
 :::
 
 ### Discoveries
+- [Bootloader unlock](#bootloader-unlock)
 
-**Table of contents:**
+### Archive:
 - [Official unlocking method?](#official-unlocking-method)
 - [Fastboot?](#with-fastboot)
 - [mtkclient](#using-mtkclient)
 
+
+### Bootloader unlock
+1. Clone repository [fuckyoumoto](https://github.com/moto-penangf/fuckyoumoto)
+2. Boot the phone to [fastboot mode](../modes/fastboot.mdx)
+3. Get the first part of the soc_id
+    ```shell
+    $ fastboot oem get_key
+   
+    (bootloader) 061A757D042B2A378D9761E60C9D3FBC
+    (bootloader) finish dump
+    OKAY [  0.003s]
+    Finished. Total time: 0.003s
+    ```
+4. Run the ```oem_keygen.py``` script to generate the oem key, specifying the received key via the argument
+    ```shell
+    $ python oem_keygen.py 061A757D042B2A378D9761E60C9D3FBC
+   
+    To hash:  061A757D042B2A378D9761E60C9D3FBC061A757D042B2A378D9761E60C9D3FBC
+    Hash:  87f3aef774eb3edbcdef39e2e94d05c98d7fd1b5db8e7623345412390e1db289
+    Possible keys:
+    87f3aef774eb3edbcdef39e2e94d05c9
+    8d7fd1b5db8e7623345412390e1db289
+    Capitalized:
+    87F3AEF774EB3EDBCDEF39E2E94D05C9
+    8D7FD1B5DB8E7623345412390E1DB289
+    ```
+5. Copy the first generated oem key and specify it with the ```fastboot oem key <KEY>``` command and try unlocking the bootloader
+    ````shell
+    $ fastboot oem key 87f3aef774eb3edbcdef39e2e94d05c9 
+   
+    (bootloader) open fastboot unlock
+    OKAY [  0.000s]
+    Finished. Total time: 0.000s
+    ````
+   
+    ````shell
+    $ fastboot flashing unlock
+   
+    (bootloader) Start unlock flow
+    (bootloader) 061A757D042B2A378D9761E60C9D3FBC
+    (bootloader) start fastboot unlock
+    (bootloader) 87f3aef774eb3edbcdef39e2e94d05c9
+    (bootloader) Unlock Success
+    (bootloader) fastboot unlock success
+    OKAY [  5.320s]
+    Finished. Total time: 5.320s
+    ````
+
+6. Checking bootloader unlocking
+    ````shell
+    $ fastboot oem lks
+   
+    (bootloader) lks = 0
+    OKAY [  0.005s]
+    Finished. Total time: 0.005s
+    ````
+
+## Archive (Old information)
 
 ### Official unlocking method?
 
