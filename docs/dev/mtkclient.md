@@ -89,6 +89,7 @@ Failed to write backups/lk_a.img to offset 0x1c800000 with length 0x200000.
 
 ## Force BROM
 Unfortunately, it looks like the firmware contains a patched Preloader, and in the event of a crash, the phone just hangs in Preloader without going to BROM.
+Furthermore, BROM mode itself is disabled by efuse, so it cannot be triggered with testpoint, too.
 
 ````shell
 $ mtk crash
