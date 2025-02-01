@@ -10,7 +10,7 @@ Carefully read all the warnings in the documentation, and if something doesn’t
 **Don't cry later and don't say we didn't warn you...**
 :::
 
-This documentation is dedicated to discoveries made by me and other people interested in unlocking the Moto G23 and Moto G13 bootloader.
+This documentation is dedicated to discoveries made by me and other people interested in unlocking and modding the Moto G23 and Moto G13.
 
 ![Image](../static/assets/sticker2.png)
 
