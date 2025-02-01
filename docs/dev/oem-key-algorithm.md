@@ -15,7 +15,7 @@ title: OEM key algorithm
 
 
 Below, a simple flowchart to show how unlocking the bootloader work:
-![Flowchart](/static/assets/unlock_key_flowchart.png)
+![Flowchart](../../static/assets/unlock_key_flowchart.png)
 
 ## Useful links
 - [fuckyoumoto repo](https://github.com/moto-penangf/fuckyoumoto)
