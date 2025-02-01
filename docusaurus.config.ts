@@ -72,6 +72,14 @@ const config: Config = {
     metadata: [
       {name: 'google-site-verification', content: 'JwvjsCql0XAVN_XhSgpLGynq8j-tMFMato0OjuG-_Us'},
     ],
+    announcementBar: {
+      id: 'bootloader_unlocked',
+      content:
+        'Bootloader has been finally unlocked! Read the documentation to find out how to unlock your phone.',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: true,
+    },
     navbar: {
       title: 'Motorola G23/G13',
       // logo: {
