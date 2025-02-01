@@ -12,8 +12,3 @@ This happens due to system integrity violation when the bootloader is locked.
 ![red-state-error.png](../../static/assets/red-state-error.png)
 
 To prevent this error, you need to unlock the bootloader to put the device into the “Orange State” to disable signature verification
-
-### Next steps
-If Red State didn't block the Recovery boot, we could run TWRP, but unfortunately that's not possible.
-
-We need to **find a way to force the device into BROM mode** to disable AVB verification or unlock the bootloader.
