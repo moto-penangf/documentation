@@ -6,14 +6,21 @@ title: Root
 Make sure you have the [bootloader unlocked](../dev/bootloader.md) or you will get [soft brick](../info/softbrick.md)!
 :::
 
-import img1 from "@site/static/assets/root/1.png";
-import img2 from "@site/static/assets/root/2.png";
-import img3 from "@site/static/assets/root/3.png";
-import img4 from "@site/static/assets/root/4.png";
-import img5 from "@site/static/assets/root/5.png";
-import img6 from "@site/static/assets/root/6.png";
+import img1 from "@site/static/assets/root/magisk/1.png";
+import img2 from "@site/static/assets/root/magisk/2.png";
+import img3 from "@site/static/assets/root/magisk/3.png";
+import img4 from "@site/static/assets/root/magisk/4.png";
+import img5 from "@site/static/assets/root/magisk/5.png";
+import img6 from "@site/static/assets/root/magisk/6.png";
 
-## Guide
+import img2_1 from "@site/static/assets/root/apatch/1.png";
+import img2_2 from "@site/static/assets/root/apatch/2.png";
+import img2_3 from "@site/static/assets/root/apatch/3.png";
+import img2_4 from "@site/static/assets/root/apatch/4.png";
+import img2_5 from "@site/static/assets/root/apatch/5.png";
+import img2_6 from "@site/static/assets/root/apatch/6.png";
+
+## Magisk
 1. Install [Magisk manager app](https://github.com/topjohnwu/Magisk/releases/)
 2. Download your current firmware archive from [lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
 3. Transfer the ```boot.img``` file from the firmware archive to the phone
@@ -36,3 +43,28 @@ import img6 from "@site/static/assets/root/6.png";
     ```
 7. Done! HAVE FUN!
    <img src={img6} width="100" />
+
+## APatch
+1. Install [APatch manager app](https://github.com/bmax121/APatch/releases/)
+2. Download your current firmware archive from [lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
+3. Transfer the ```boot.img``` file from the firmware archive to the phone
+4. Patch the boot.img file via APatch
+
+   <img src={img2_1} width="100" />
+   <img src={img2_2} width="100" />
+   <img src={img2_3} width="100" />
+   <img src={img2_4} width="100" />
+   <img src={img2_5} width="100" />
+
+5. Transfer the modded ``apatch_patched-*.img`` file to PC
+6. Flash the ``magisk_patched-*.img`` file via fastboot
+    ```shell
+     $ fastboot flash boot apatch_patched_10763_0.10.7_sohz.img
+
+     Sending 'boot_a' (32768 KB)                        OKAY [  0.752s]
+     Writing 'boot_a'                                   OKAY [  0.416s]
+     Finished. Total time: 1.170s
+    ```
+7. Install APatch via APatch manager and enter the SuperKey as needed
+8. Done! HAVE FUN!
+    <img src={img2_6} width="100" />
