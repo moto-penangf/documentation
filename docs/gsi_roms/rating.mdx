@@ -1,0 +1,37 @@
+---
+title: Rating
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Link from "@docusaurus/Link";
+
+import { a14 } from "./gsi_roms.js";
+
+<Tabs>
+    <TabItem value="0" label="Platinum" default>
+        {a14.platinum.map((item, index) => (
+            <Link target="_blank" to={item.link}>{item.name}</Link>
+        ))}
+    </TabItem>
+    <TabItem value="1" label="Gold">
+        {a14.gold.map((item, index) => (
+            <Link target="_blank" to={item.link}>{item.name}</Link>
+        ))}
+    </TabItem>
+    <TabItem value="2" label="Silver">
+        {a14.silver.map((item, index) => (
+            <Link target="_blank" to={item.link}>{item.name}</Link>
+        ))}
+    </TabItem>
+    <TabItem value="3" label="Bronze">
+        {a14.bronze.map((item, index) => (
+            <Link target="_blank" to={item.link}>{item.name}</Link>
+        ))}
+    </TabItem>
+    <TabItem value="4" label="Broken">
+        {a14.broken.map((item, index) => (
+            <Link target="_blank" to={item.link}>{item.name}</Link>
+        ))}
+    </TabItem>
+</Tabs>
