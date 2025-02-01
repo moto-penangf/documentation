@@ -13,7 +13,7 @@ Verification happens right after the device is first connected to the internet.
 
 ## How can I remove PAKS
 
-The only way to disable/remove PAKS is to root the device. Read [Root](modding/root)
+The only way to disable/remove PAKS is to root the device. Read [Root](../modding/root)
 
 ## PAKS Permissions
 
