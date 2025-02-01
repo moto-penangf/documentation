@@ -1,0 +1,41 @@
+---
+title: GSI
+---
+
+## What is GSI?
+GSI (Generic System Image) is a universal Android image created by Google as part of Project Treble. It is designed to work on any compatible device, providing a clean AOSP experience without manufacturer modifications.
+
+Custom GSI refers to modified versions of GSI (e.g., LineageOS, Pixel Experience, CrDroid) developed by third-party developers. They allow users to upgrade their devices, experience a stock Android environment without bloatware, and unlock additional customization options.
+
+| ✅ Advantages | ❌ Disadvantages |
+|-|-|
+|Access to newer Android versions on unsupported devices|Potential bugs and lack of official manufacturer support|
+|Pure Android experience without manufacturer customizations|Some features (camera, VoLTE, sensors) may not work properly|
+|Improved performance and customization options||
+
+## Search and download for GSI ROMS
+First, take a look at [our section "GSI ROMS"](../gsi_roms/info.md) with detailed descriptions of each image and its rating.
+
+## Install GSI
+1. Download GSI ROM
+2. Reboot to [fastbootd mode](../modes/fastboot/#access-fastbootd)
+    ```shell
+    $ adb reboot fastboot
+    ```
+3. Erase system partition
+    ```shell
+    $ fastboot erase system
+    ```
+4. Flashing GSI image
+    ```shell
+    $ fastboot flash system gsi.img
+    ```
+5. Wipe user data
+    ```shell
+    $ fastboot -w
+    ```
+
+6. Reboot
+    ```shell
+    $ fastboot reboot
+    ```
