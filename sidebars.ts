@@ -41,6 +41,11 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Modding',
+      items: ['modding/root']
+    },
+    {
+      type: 'category',
       label: 'Schematics',
       items: ['schematic/keypad', 'schematic/control-if']
     },

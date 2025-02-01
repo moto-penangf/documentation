@@ -1,0 +1,38 @@
+---
+title: Root
+---
+
+:::warning
+Make sure you have the [bootloader unlocked](../dev/bootloader.md) or you will get [soft brick](../info/softbrick.md)!
+:::
+
+import img1 from "@site/static/assets/root/1.png";
+import img2 from "@site/static/assets/root/2.png";
+import img3 from "@site/static/assets/root/3.png";
+import img4 from "@site/static/assets/root/4.png";
+import img5 from "@site/static/assets/root/5.png";
+import img6 from "@site/static/assets/root/6.png";
+
+## Guide
+1. Install [Magisk manager app](https://github.com/topjohnwu/Magisk/releases/)
+2. Download your current firmware archive from [lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
+3. Transfer the ```boot.img``` file from the firmware archive to the phone
+4. Patch the boot.img file via magisk
+
+   <img src={img1} width="100" />
+   <img src={img2} width="100" />
+   <img src={img3} width="100" />
+   <img src={img4} width="100" />
+   <img src={img5} width="100" />
+
+5. Transfer the modded ``magisk_patched-*.img`` file to PC
+6. Flash the ``magisk_patched-*.img`` file via fastboot
+    ```shell
+    $ fastboot flash boot magisk_patched-28100_wFYgW.img 
+   
+    Sending 'boot_a' (32768 KB)                        OKAY [  0.752s]
+    Writing 'boot_a'                                   OKAY [  0.416s]
+    Finished. Total time: 1.170s
+    ```
+7. Done! HAVE FUN!
+   <img src={img6} width="100" />

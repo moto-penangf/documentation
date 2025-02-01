@@ -16,6 +16,7 @@ This documentation is dedicated to discoveries made by me and other people inter
 
 ## Quick Links
 - [Bootloader unlock](dev/bootloader.md)
+- [Root](modding/root.mdx)
 - [FAQ](info/faq.md)
 
 ## Contributing

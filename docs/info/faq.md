@@ -5,10 +5,8 @@ title: Frequently asked questions
 ### How can I unlock the bootloader?
 Read [Bootloader unlock](../dev/bootloader.md#bootloader-unlock)
 
-[//]: # (### How do I get root?)
-
-[//]: # ()
-[//]: # (You can't without bootloader unlocking.)
+### How do I get root?
+Read [Root](../modding/root.mdx)
 
 ### My phone doesn't turn on anymore after I run a command, what should I do?
 
