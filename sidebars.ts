@@ -42,7 +42,12 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Modding',
-      items: ['modding/root']
+      items: ['modding/root', 'modding/gsi']
+    },
+    {
+      type: 'category',
+      label: 'GSI Roms',
+      items: ['gsi_roms/info', 'gsi_roms/rating']
     },
     {
       type: 'category',
