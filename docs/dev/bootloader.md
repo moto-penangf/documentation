@@ -20,9 +20,10 @@ We finally managed to find out the key generation algorithm and you can unlock t
 
 
 ### Bootloader unlock
-1. Clone repository [fuckyoumoto](https://github.com/moto-penangf/fuckyoumoto)
-2. Boot the phone to [fastboot mode](../modes/fastboot.mdx)
-3. Get the first part of the soc_id
+1. Enable "OEM Unlocking" in developer settings
+2. Clone repository [fuckyoumoto](https://github.com/moto-penangf/fuckyoumoto)
+3. Boot the phone to [fastboot mode](../modes/fastboot.mdx)
+4. Get the first part of the soc_id
     ```shell
     $ fastboot oem get_key
    
@@ -31,7 +32,7 @@ We finally managed to find out the key generation algorithm and you can unlock t
     OKAY [  0.003s]
     Finished. Total time: 0.003s
     ```
-4. Run the ```oem_keygen.py``` script to generate the oem key, specifying the received key via the argument
+5. Run the ```oem_keygen.py``` script to generate the oem key, specifying the received key via the argument
     ```shell
     $ python oem_keygen.py 061A757D042B2A378D9761E60C9D3FBC
    
@@ -44,7 +45,7 @@ We finally managed to find out the key generation algorithm and you can unlock t
     87F3AEF774EB3EDBCDEF39E2E94D05C9
     8D7FD1B5DB8E7623345412390E1DB289
     ```
-5. Copy the first generated oem key and specify it with the ```fastboot oem key <KEY>``` command and try unlocking the bootloader
+6. Copy the first generated oem key and specify it with the ```fastboot oem key <KEY>``` command and try unlocking the bootloader
     ````shell
     $ fastboot oem key 87f3aef774eb3edbcdef39e2e94d05c9 
    
@@ -66,7 +67,7 @@ We finally managed to find out the key generation algorithm and you can unlock t
     Finished. Total time: 5.320s
     ````
 
-6. Checking bootloader unlocking
+7. Checking bootloader unlocking
     ````shell
     $ fastboot oem lks
    
