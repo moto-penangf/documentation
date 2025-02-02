@@ -17,6 +17,15 @@ Custom GSI refers to modified versions of GSI (e.g., LineageOS, Pixel Experience
 First, take a look at [our section "GSI ROMS"](../gsi_roms/info.md) with detailed descriptions of each image and its rating.
 
 ## Install GSI
+
+:::warning
+When flashing excessively large GSI images, the product partition must be removed
+
+````shell
+fastboot delete-logical-partition product_a
+````
+:::
+
 1. Download GSI ROM
 2. Reboot to [fastbootd mode](../modes/fastboot/#access-fastbootd)
     ```shell
