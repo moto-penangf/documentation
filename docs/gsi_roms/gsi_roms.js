@@ -12,6 +12,10 @@ export const a14 = {
             name: "Treble Matrixx (ChonDoit)",
             link: "a14/chondoit_treble_matrixx"
         },
+        {
+            name: "EvolutionX 9.7 (mytja)",
+            link: "a14/mytja_evolutionx_9_7"
+        },
     ],
     broken: []
 };
