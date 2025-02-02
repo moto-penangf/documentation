@@ -75,7 +75,7 @@ const config: Config = {
     announcementBar: {
       id: 'bootloader_unlocked',
       content:
-        'Bootloader has been finally unlocked! Read the documentation to find out how to unlock your phone.',
+        '🎉 Bootloader has been finally unlocked! Read the documentation to find out how to unlock your phone.',
       backgroundColor: '#fafbfc',
       textColor: '#091E42',
       isCloseable: true,
