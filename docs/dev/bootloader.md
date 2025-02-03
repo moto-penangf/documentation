@@ -21,9 +21,9 @@ We finally managed to find out the key generation algorithm and you can unlock t
 
 ### Bootloader unlock
 :::note
-You can also use [this website](https://html-preview.github.io/?url=https://github.com/cxzstuff/stuff/blob/main/Moto-G23-G13-oem-key2.html) to generate the key instead of using the script if you can't use python. 
+You can also use [**this website**](https://html-preview.github.io/?url=https://github.com/cxzstuff/stuff/blob/main/Moto-G23-G13-oem-key2.html) to generate the key instead of using the script if you can't use python. 
 
-Thanks to [@cxzstuff](https://github.com/cxzstuff) for making it.
+Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
 :::
 1. Enable "OEM Unlocking" in developer settings
 2. Clone repository [fuckyoumoto](https://github.com/moto-penangf/fuckyoumoto)
