@@ -6,7 +6,7 @@ title: About
 **MOTOROLA SHITTY FIRMWARE WARNING**
 
 Motorola really has shitty firmware.
-Carefully read all the warnings in the documentation, and if something doesn’t work - **DO NOT CONTINUE, THERE IS A RISK OF BRICKING YOUR DEVICE!**
+**Carefully read all the warnings in the documentation**, and if something doesn’t work - **DO NOT CONTINUE, THERE IS A RISK OF BRICKING YOUR DEVICE!**
 **Don't cry later and don't say we didn't warn you...**
 :::
 
@@ -15,6 +15,7 @@ This documentation is dedicated to discoveries made by me and other people inter
 ![Image](../static/assets/sticker2.png)
 
 ## Quick Links
+- [Stuff to avoid doing](info/things_to_avoid.md)
 - [Bootloader unlock](dev/bootloader.md)
 - [Root](modding/root.mdx)
 - [FAQ](info/faq.md)
@@ -26,7 +27,7 @@ For discoveries not yet assessed, consider starting a new discussion [here](http
 
 ## Credits
 
-Documentation started by [Shomy](https://github.com/shomykohai), and then kept being expanded by them and [DiabloSat](https://github.com/progzone122).
+Documentation started by [Shomy](https://github.com/shomykohai), and kept being expanded by them and [DiabloSat](https://github.com/progzone122).
 
 
 Special thanks goes to [DiabloSat](https://github.com/progzone122) and the [Helio G85 telegram group](https://t.me/motoheliog85) for providing crucial intel and testing hardware stuff.
