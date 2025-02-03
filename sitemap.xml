@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://penangf.fuckyoumoto.xyz</loc>
-    <lastmod>2025-02-01T18:51:48Z</lastmod>
+    <lastmod>2025-02-03T11:57:56Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/about</loc>
+    <lastmod>2025-02-03T11:54:55Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/flash_stock</loc>
+    <lastmod>2025-02-03T08:38:01Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/bootloader</loc>
+    <lastmod>2025-02-02T18:07:20Z</lastmod>
+  </url>
+   
+  <url>
+    <loc>https://penangf.fuckyoumoto.xyz/docs/info/things_to_avoid</loc>
+    <lastmod>2025-02-02T10:47:58Z</lastmod>
   </url>
    
   <url>
     <loc>https://penangf.fuckyoumoto.xyz/docs/gsi_roms/info</loc>
-    <lastmod>2025-02-01T18:51:48Z</lastmod>
+    <lastmod>2025-02-01T18:53:04Z</lastmod>
   </url>
    
   <url>
@@ -18,11 +38,6 @@
   <url>
     <loc>https://penangf.fuckyoumoto.xyz/docs/info/paks</loc>
     <lastmod>2025-02-01T12:06:35Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://penangf.fuckyoumoto.xyz/docs/about</loc>
-    <lastmod>2025-02-01T08:14:04Z</lastmod>
   </url>
    
   <url>
@@ -43,11 +58,6 @@
   <url>
     <loc>https://penangf.fuckyoumoto.xyz/docs/info/avb</loc>
     <lastmod>2025-02-01T00:04:05Z</lastmod>
-  </url>
-   
-  <url>
-    <loc>https://penangf.fuckyoumoto.xyz/docs/dev/bootloader</loc>
-    <lastmod>2025-01-31T22:40:44Z</lastmod>
   </url>
    
   <url>
