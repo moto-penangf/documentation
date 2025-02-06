@@ -240,10 +240,5 @@ BROM mode has been confirmed to have been disabled by efuse, so we cannot access
 
 **UART:**<br/>
 To use UART, refer to [UART](/dev/uart.md)<br/>
-Further testing is needed.<br/>
-
-I suspect to enable UART we need to run `fastboot oem p2u` first.
-
-
 
 The list of the testpoints I've found is [here](testpoints.mdx).
