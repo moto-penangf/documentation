@@ -25,4 +25,10 @@ This is a list of tools that helped during the research of information for bootl
 - [RSA](https://en-us.support.motorola.com/app/softwarefix) - Useless official software from Motorola for device recovery (in our case works as a wrapper over flash tool, better use just flash tool - get more logs).
 
 ### Schematics
-- [DZKJ Schematics](https://www.dzkj16888.com/) 
+- [DZKJ Schematics](https://www.dzkj16888.com/)
+
+## Other tools
+
+This section is unrelated from the tools useful for bootloader unlocking and/or firmware recovery.
+
+* [Logo builder](https://xdaforums.com/t/changing-boot-logo-logo-bin-program.1953726/) -- Edit logo.bin to have custom splash screen when booting and in fastboot
