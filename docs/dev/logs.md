@@ -8,7 +8,7 @@ Boot logs are useful during debug.
 
 Currently, we can easily get boot logs either through fastboot, or through mtkclient.
 
-Ideally, [using UART](dev/uart#getting-logs) would be the best solution for getting logs in real time and debugging, but it requires hardware modification.
+Ideally, [using UART](dev/uart) would be the best solution for getting logs in real time and debugging, but it requires hardware modification.
 
 ## fuckyoumoto (though mtkclient) 
 Clone the [workarounds script repo](https://github.com/moto-penangf/fuckyoumoto) and poweroff your phone.
