@@ -37,7 +37,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Development',
-      items: ['dev/bootloader', 'dev/partitions', 'dev/testpoints', 'dev/uart',  'dev/mtkclient', 'dev/oem-key-algorithm', 'dev/twrp' , 'dev/logs', 'dev/decompilation', 'dev/tools']
+      items: ['dev/bootloader', 'dev/partitions', 'dev/testpoints', 'dev/uart',  'dev/mtkclient', 'dev/oem-key-algorithm', 'dev/touchscreen' , 'dev/logs', 'dev/decompilation', 'dev/tools']
     },
     {
       type: 'category',
