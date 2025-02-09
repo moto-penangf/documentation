@@ -245,9 +245,11 @@ Finished. Total time: 0.005s`
 (bootloader) Start unlock flow
 (bootloader) 061A757D042B2A378D9761E60C9D3FBC
 (bootloader) start fastboot unlock
-(bootloader) 061A757D042B2A378D9761E60C9D3FBC
-FAILED (remote: 'Unlock key code is incorrect!')
-fastboot: error: Command failed`
+(bootloader) 87f3aef774eb3edbcdef39e2e94d05c9
+(bootloader) Unlock Success
+(bootloader) fastboot unlock success
+OKAY [  5.320s]
+Finished. Total time: 5.320s`
   },
   {
     command: "fastboot reboot",
