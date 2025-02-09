@@ -81,6 +81,14 @@ Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
     Finished. Total time: 0.005s
     ````
 
+8. Flash custom logo.bin (Optional)
+
+   [Download logo.bin](../../static/assets/modding/logo.bin)
+
+   ```shell
+   $ fastboot flash logo logo-5fa2e5b8652ffaebad2bcc6768530fae.bin
+   ```
+
 ## Archive (Old information)
 
 ### Official unlocking method?
