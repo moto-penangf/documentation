@@ -89,8 +89,9 @@ Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
    $ fastboot flash logo logo-5fa2e5b8652ffaebad2bcc6768530fae.bin
    ```
    
-9. Flash custom bootloader (HIGHLY RECOMMENDED)
-   [Go to guide](../modding/custom-bootloader.md)
+[//]: # (9. Flash custom bootloader &#40;HIGHLY RECOMMENDED&#41;)
+
+[//]: # (   [Go to guide]&#40;../modding/custom-bootloader.md&#41;)
 
 ## Archive (Old information)
 
