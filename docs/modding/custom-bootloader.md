@@ -22,20 +22,29 @@ In addition, it extends the functionality by adding new options for customizing 
 - Adds ```fastboot oem help```
 - Adds ```fastboot oem hexdump```
 
-## Guide
+## Install
+### Manually build
 1. Download your current firmware archive from [lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
 2. Clone repository [chouchou](https://github.com/R0rt1z2/chouchou)
 3. Transfer the ```lk.img``` file from the firmware archive to the directory ```chouchou```
-4. Patch stock lk
+4. Install dependencies
     ```shell
-    $ python patch_lk.py lk.img bin/lk.img
+    $ sudo pacman -S arm-none-eabi-newlib arm-none-eabi-gcc
+    ```
+5. Build payload
+    ```shell
+    $ cd payload; make; cd ..
+    ```
+6. Patch stock lk
+    ```shell
+    $ python3 patch_lk.py lk.img payload/build/payload.bin
    
     base: 0x4c400000, size: 1072864, name: lk
     payload injection point at 0x4c4f6400
     0x4c427638 (pivot) bl 0x4c4f6400 (payload)
     Writing 2238304 bytes to lk.img-patched...
     ```
-5. Flash custom lk
+7. Flash custom lk
     ```shell
     $ fastboot flash lk lk.img-patched
     ```
