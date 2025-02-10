@@ -2,6 +2,19 @@
 title: Custom Bootloder
 ---
 
+export const images = [
+    {
+        "payload_version": "0.1",
+        "firmware_version": "UHA34.29-10",
+        "url": "../../assets/modding/chouchou/0.1/chouchou-UHA34.29-10.img"
+    },
+    {
+        "payload_version": "0.1",
+        "firmware_version": "UHAS34.29-10",
+        "url": "../../assets/modding/chouchou/0.1/chouchou-UHAS34.29-10.img"
+    },
+];
+
 :::warning
 Make sure you have the [bootloader unlocked](../dev/bootloader.md) or you will get [soft brick](../info/softbrick.md)!
 :::
@@ -23,6 +36,33 @@ In addition, it extends the functionality by adding new options for customizing 
 - Adds ```fastboot oem hexdump```
 
 ## Install
+### Prebuild images
+
+export const grouped = images.reduce((acc, item) => {
+    if (!acc[item.payload_version]) {
+        acc[item.payload_version] = [];
+    }
+    acc[item.payload_version].push(item);
+    return acc;
+}, {});
+
+{Object.keys(grouped).map(payload_version => (
+    <details key={payload_version} className="custom-details">
+        <summary>ChouChou v{payload_version}</summary>
+        <ul>
+            {grouped[payload_version].map(item => (
+                <a href={item.url}><li key={item.firmware_version}>{item.firmware_version}</li></a>
+            ))}
+        </ul>
+    </details>
+))}
+
+<br />
+
+```shell
+$ fastboot flash lk chouchou-UHA34.29-10.img
+```
+
 ### Manually build
 1. Download your current firmware archive from [lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
 2. Clone repository [chouchou](https://github.com/R0rt1z2/chouchou)
