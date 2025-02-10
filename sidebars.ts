@@ -42,7 +42,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Modding',
-      items: ['modding/root', 'modding/gsi', 'modding/disable-bootloader-warnings']
+      items: ['modding/custom-bootloader', 'modding/root', 'modding/gsi', 'modding/disable-bootloader-warnings']
     },
     {
       type: 'category',
