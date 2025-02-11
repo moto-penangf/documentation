@@ -73,9 +73,9 @@ const config: Config = {
       {name: 'google-site-verification', content: 'JwvjsCql0XAVN_XhSgpLGynq8j-tMFMato0OjuG-_Us'},
     ],
     announcementBar: {
-      id: 'bootloader_unlocked',
+      id: 'twrp_working',
       content:
-        '🎉 Bootloader has been finally unlocked! Read the documentation to find out how to unlock your phone.',
+        '🎉 Working TWRP has been released. Read the documentation to know how to install it.',
       backgroundColor: '#fafbfc',
       textColor: '#091E42',
       isCloseable: true,
