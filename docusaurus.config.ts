@@ -4,6 +4,13 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const redirects = [
+  {
+    from: "/docs/modding/twrp",
+    to: "/docs/modding/custom-recovery"
+  }
+];
+
 const config: Config = {
   title: 'Motorola G23/G13',
   // tagline: 'Documentation',
@@ -64,7 +71,10 @@ const config: Config = {
 
   plugins: [
     'docusaurus-plugin-zooming',
-    'docusaurus-lunr-search'
+    'docusaurus-lunr-search',
+    ['@docusaurus/plugin-client-redirects', {
+      redirects
+    }]
   ],
   themeConfig: {
     // Replace with your project's social card
