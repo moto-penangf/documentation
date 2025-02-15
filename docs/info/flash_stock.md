@@ -7,7 +7,7 @@ Carefully read all the warning in this section, as you might brick your device i
 :::
 
 
-## Flash stock firmware if you have locked bootloader:
+## Locked Bootloader method
 
 To flash stock firmware, you'll need to use SP Flash tool, which is available [here](https://github.com/moto-penangf/penangf-sp-flash-tool/releases/tag/0.1).
 
@@ -25,32 +25,22 @@ Select DA_PL_NO_CERT_V6.bin as the Download Agent.
 
 Press the Download button.
 
-## Flash stock firmware if you have unlocked bootloader:
+## Unlocked bootloader method
 
 You can flash stock firmware by using Fastboot
 
-Download the latest firmware from [Lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
-
 :::warning
-DO NOT execute any other commands apart from the one listed below, or you might brick your device.
+DO NOT run any other commands than running the script, or you may brick your device.
 
-DO NOT flash preloader, never.
+DO NOT flash the preloader, ever.
 :::
 
-With fastboot, execute the following commands:
-
-```sh
-
-$ fastboot flash vbmeta_a vbmeta.img
-
-$ fastboot flash vbmeta_system_a vbmeta_system.img
-
-$ fastboot flash vbmeta_vendor_a vbmeta_vendor.img  
-
-$ fastboot flash boot_a boot.img
-
-$ fastboot flash super super.img
-```
+1. Download the latest firmware from [Lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
+2. Clone repository [fuckyoumoto](https://github.com/moto-penangf/fuckyoumoto)
+3. Run ```flash_stock.sh``` script 
+   ```shell
+   $ ./flash_stock.sh <firmware_directory>
+   ```
 
 There's no need to flash any other partition other than these.
 
