@@ -19,3 +19,5 @@ Below, a simple flowchart to show how unlocking the bootloader work:
 
 ## Useful links
 - [fuckyoumoto repo](https://github.com/moto-penangf/fuckyoumoto)
+- [lk decompilatiom](https://github.com/moto-penangf/lk_dec)
+
