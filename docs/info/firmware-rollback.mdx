@@ -122,3 +122,8 @@ And maybe that's the problem, because **we found garbage from the old preloader 
 
 ##### Possible solution
 We should try [flashing the full preloader dump](https://github.com/moto-penangf/dumps/releases) (which is 4MB in size) and it will definitely overwrite the entire partition and leave no garbage like it does with the official image.
+
+#### Flashing preloader full dump (4MB)
+After attempting to flash a complete preloader A13 dump, the result is Hard brick, which needs to be restored again via [JTAG](../dev/jtag.md).
+
+I still don't understand how it determines the preloader version (Maybe RPMB???), but unfortunately it does. ***Rollback impossible.***
