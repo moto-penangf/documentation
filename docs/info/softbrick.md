@@ -8,7 +8,7 @@ A softbrick is when a phone doesn't want to bootup making it unable to boot into
 
 ## Difference between red state and softbrick
 
-Red state is a mediatek specific term, and it happens when the device cannot verify the signature of the image installed. To fix it, you have to reflash stock firmware. 
+Red state is a specific term of [verified boot state](https://source.android.com/docs/security/features/verifiedboot/boot-flow#dm-verity-corruption), and it happens when the device cannot verify the signature of the image installed. To fix it, you have to reflash stock firmware. 
 
 Softbrick, on the other hand, happens when the device cannot continue booting up the system.
 
