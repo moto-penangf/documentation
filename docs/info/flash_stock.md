@@ -33,6 +33,10 @@ You can flash stock firmware by using Fastboot
 DO NOT run any other commands than running the script, or you may brick your device.
 
 DO NOT flash the preloader, ever.
+
+**DO NOT REFLASH STOCK FIRMWARE WITH SP FLASH TOOL WITHOUT FIRST FLASHING IT WITH FASTBOOT, AS YOU MIGHT GET AN HARDBRICK**
+**FIRST FLASH STOCK FIRMWARE THROUGH FASTBOOT, AND JUST THEN FLASH IT WITH SP FLASH TOOL**
+**SP FLASH TOOL MIGHT RELOCK THE BOOTLOADER BEFORE FINISHING FLASHING, CAUSING AN ERROR THAT CAN ONLY BE RECOVERED WITH JTAG**
 :::
 
 1. Download the latest firmware from [Lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
