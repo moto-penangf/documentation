@@ -45,5 +45,7 @@ DO NOT flash the preloader, ever.
 There's no need to flash any other partition other than these.
 
 :::warning
-**DO NOT lock the bootloader afterwards. If you want to relock the bootloader, first run these commands and then flash the phone with SP Flash Tool, making sure to untick preloader.**
+**DO NOT lock the bootloader afterwards.**<br/>
+
+If you want to relock the bootloader, first run these commands **MAKING SURE YOU'RE FLASHING THE LATEST FIRMWARE**, and then flash the phone with SP Flash Tool, **making sure to untick preloader.**<br/>
 :::
