@@ -24,7 +24,11 @@ This Softbrick happens because the bootloader sets the g_boot_mode to boot into 
 To fix this, your job is to interrupt the bootloop and run a script that will force boot you into FASTBOOT and automatically fix the softbrick:
 1. Download the latest firmware from [Lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
 2. Clone repository [fuckyoumoto](https://github.com/moto-penangf/fuckyoumoto)
-3. Run ```fix_fastbootd_softbrick.sh``` script in the right mode
+3. Install dependencies
+   ```shell
+   $ pip install -r requirements.txt
+   ```
+4. Run ```fix_fastbootd_softbrick.sh``` script in the right mode
 
     **Syntax:**
     ```shell
@@ -48,7 +52,9 @@ To fix this, your job is to interrupt the bootloop and run a script that will fo
     - Mode 2
         ```shell
         $ ./fix_fastbootd_softbrick.sh ../penangf_g_user_14_UHA34.29-10 2
-        ```   
+        ```
+5. Connect the phone to the computer and press and hold down all buttons while the phone is hovering on the logo to abort the bootloop
+6. The phone will reboot into FASTBOOT and automatically fix the softbrick using the script you specified in the “mode” argument
 
 ## fastboot reboot bootloader
 
