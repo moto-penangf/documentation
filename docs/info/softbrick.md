@@ -21,9 +21,34 @@ Fortunately they can be fixed really easily.
 
 This Softbrick happens because the bootloader sets the g_boot_mode to boot into fastbootd mode, but probably for a bug, when rebooting the preloader fails to find fastbootd, thus entering a bootloop.
 
-To fix this, you just need to reflash stock firmware files, excluding super and userdata, to reset the information which tells the preloader to reboot to fastbootd.
+To fix this, your job is to interrupt the bootloop and run a script that will force boot you into FASTBOOT and automatically fix the softbrick:
+1. Download the latest firmware from [Lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
+2. Clone repository [fuckyoumoto](https://github.com/moto-penangf/fuckyoumoto)
+3. Run ```fix_fastbootd_softbrick.sh``` script in the right mode
 
-You can either use mtkclient or SPFT.
+    **Syntax:**
+    ```shell
+    $ ./fix_fastbootd_softbrick.sh <FIRMWARE_DIR> <MODE (Optional)>
+    ```
+
+    :::note
+    If you don't know which mode you want, try mode 1 first
+    :::
+
+    | Mode              | Description                                                                                                       |
+    |-------------------|-------------------------------------------------------------------------------------------------------------------|
+    | **1** _(Default)_ | Only the vendor_boot and boot partitions are flashed. <br/>It will help if the firmware was not badly corrupted.  |                                                                                                         |
+    | **2**             | The entire firmware is flashed in its entirety. <br/>All user data will be lost. <br/>This will take a long time. |
+
+    **Example of using the script:**
+    - Mode 1
+        ```shell
+        $ ./fix_fastbootd_softbrick.sh ../penangf_g_user_14_UHA34.29-10 1
+        ```
+    - Mode 2
+        ```shell
+        $ ./fix_fastbootd_softbrick.sh ../penangf_g_user_14_UHA34.29-10 2
+        ```   
 
 ## fastboot reboot bootloader
 
