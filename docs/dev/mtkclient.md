@@ -19,7 +19,7 @@ DAA enabled: True
 - **DAA (Download Agent Authentication)** - Checking the DA Agent for authenticity used to flash the device.
 
 ## DA Agents
-[Download all DA agents](https://github.com/moto-penangf/fuckyoumoto/tree/main/sources)
+[Download all DA agents](https://github.com/fuckyoumoto/fuckyoumoto-utils/tree/main/sources)
 
 The device has DAA (Download Agent Authentication) and SBC (Secure Boot Check) enabled, requiring a proper DA file to interact with it using mtkclient.
 

@@ -23,7 +23,7 @@ This Softbrick happens because the bootloader sets the g_boot_mode to boot into 
 
 To fix this, your job is to interrupt the bootloop and run a script that will force boot you into FASTBOOT and automatically fix the softbrick:
 1. Download the latest firmware from [Lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
-2. Clone repository [fuckyoumoto](https://github.com/moto-penangf/fuckyoumoto)
+2. Clone repository [fuckyoumoto](https://github.com/fuckyoumoto/fuckyoumoto-utils)
 3. Install dependencies
    ```shell
    $ pip install -r requirements.txt

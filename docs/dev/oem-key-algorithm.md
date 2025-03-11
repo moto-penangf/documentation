@@ -18,6 +18,6 @@ Below, a simple flowchart to show how unlocking the bootloader work:
 ![Flowchart](../../static/assets/unlock_key_algorithm.png)
 
 ## Useful links
-- [fuckyoumoto repo](https://github.com/moto-penangf/fuckyoumoto)
+- [fuckyoumoto-utils repo](https://github.com/fuckyoumoto/fuckyoumoto-utils)
 - [lk decompilatiom](https://github.com/moto-penangf/lk_dec)
 

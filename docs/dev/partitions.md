@@ -78,4 +78,4 @@ This is a list of partitions that are of interest for this device:
 * **`proinfo`** -- Contains serial number. Can be written by mtkclient.
 
 ## Backup
-To backup all the important partitions, use the [Backup Critical Partition](https://github.com/moto-penangf/fuckyoumoto/blob/main/backup_critical_partitions.sh) script from [DiabloSat](https://github.com/moto-penangf/fuckyoumoto/)
+To backup all the important partitions, use the [Backup Critical Partition](https://github.com/fuckyoumoto/fuckyoumoto-utils/blob/main/backup_critical_partitions.sh) script from [DiabloSat](https://github.com/moto-penangf/fuckyoumoto/)

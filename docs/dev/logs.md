@@ -11,7 +11,7 @@ Currently, we can easily get boot logs either through fastboot, or through mtkcl
 Ideally, [using UART](/dev/uart.md) would be the best solution for getting logs in real time and debugging, but it requires hardware modification.
 
 ## fuckyoumoto (though mtkclient) 
-Clone the [workarounds script repo](https://github.com/moto-penangf/fuckyoumoto) and poweroff your phone.
+Clone the [workarounds script repo](https://github.com/fuckyoumoto/fuckyoumoto-utils) and poweroff your phone.
 
 Run `get_logs.sh` and connect the phone to the pc.
 You'll find the dumped logs inside the `exported_logs` directory

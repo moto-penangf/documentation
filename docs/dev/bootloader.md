@@ -28,7 +28,7 @@ You can also use [**this website**](https://html-preview.github.io/?url=https://
 Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
 :::
 1. Enable "OEM Unlocking" in developer settings
-2. Clone repository [fuckyoumoto](https://github.com/moto-penangf/fuckyoumoto)
+2. Clone repository [fuckyoumoto-utils](https://github.com/fuckyoumoto/fuckyoumoto-utils)
 3. Boot the phone to [fastboot mode](../modes/fastboot.mdx)
 4. Get the first part of the soc_id
     ```shell
@@ -215,7 +215,7 @@ Unfortunately, the device has a patched preloader, meaning we can't crash to BRO
 We can only interact with the preloader.
 
 **Some file that are required:**
-* preloader (Easily obtainable from official firmware, or more recently [from here](https://github.com/moto-penangf/fuckyoumoto/raw/refs/heads/main/sources/preloader_penangf.bin))
+* preloader (Easily obtainable from official firmware, or more recently [from here](https://github.com/fuckyoumoto/fuckyoumoto-utils/raw/refs/heads/main/sources/preloader_penangf.bin))
 * Download Agent (Obtainable from RSA SP Flash tool, as it gets extracted during Rescue Mode, and now easy to get [from GitHub](https://github.com/moto-penangf/penangf-sp-flash-tool))
 
 

@@ -17,7 +17,7 @@ This is a list of tools that helped during the research of information for bootl
 * [mtkclient installer (Windows)](https://github.com/netzsworth/mtkclient-installer) -- Automatic MTKClient installer for Windows
 * [Android udev rules (Linux)](https://github.com/M0Rf30/android-udev-rules) -- Udev rules to make android & MTK devices work under Linux
 
-- [DiabloSat penangf workarounds](https://github.com/moto-penangf/fuckyoumoto) -- Workarounds shell scripts to interact with penangf through mtkclient
+- [FUCKYOUMOTO Utils](https://github.com/fuckyoumoto/fuckyoumoto-utils) -- Workarounds shell scripts to interact with penangf through mtkclient
 
 ### Tools for device recovery
 - [SP Flash Tool](https://github.com/moto-penangf/penangf-sp-flash-tool/releases/tag/0.1) -- SP Flash Tool extracted from RSA (Software Fix) 

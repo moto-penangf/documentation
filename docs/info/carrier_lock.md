@@ -23,8 +23,8 @@ Carrier lock on this device is quite easy to remove, so much that even the offic
 ## Using mtkclient (Recommended)
 
 1. Download mtkclient [here](https://github.com/bkerler/mtkclient/)
-2. Download the unlock_elable.img file from the fuckyoumoto repo [here](https://github.com/moto-penangf/fuckyoumoto/raw/refs/heads/main/sources/unlock_elable.img)
-3. Get the device DA file from [here](https://github.com/moto-penangf/fuckyoumoto/raw/refs/heads/main/sources/MT6768_USER.bin) and the preloader from [here](https://github.com/moto-penangf/fuckyoumoto/raw/refs/heads/main/sources/preloader_penangf.bin)
+2. Download the unlock_elable.img file from the fuckyoumoto-utils repo [here](https://github.com/fuckyoumoto/fuckyoumoto-utils/raw/refs/heads/main/sources/unlock_elable.img)
+3. Get the device DA file from [here](https://github.com/fuckyoumoto/fuckyoumoto-utils/raw/refs/heads/main/sources/MT6768_USER.bin) and the preloader from [here](https://github.com/fuckyoumoto/fuckyoumoto-utils/raw/refs/heads/main/sources/preloader_penangf.bin)
 3. Run 
 ```sh
 $ mtk w elable <path-to-unlock_elable.img> --preloader preloader_penangf.bin --loader MT6768_USER.bin`
@@ -32,6 +32,6 @@ $ mtk w elable <path-to-unlock_elable.img> --preloader preloader_penangf.bin --l
 
 ## Alternative method
 
-1. Download the fuckyoumoto repo [here](https://github.com/moto-penangf/fuckyoumoto)
+1. Download the fuckyoumoto-utils repo [here](https://github.com/fuckyoumoto/fuckyoumoto-utils)
 2. Download python
 3. Run `python3 remove_carrier_block.py`
