@@ -27,6 +27,10 @@ You can also use [**this website**](https://html-preview.github.io/?url=https://
 
 Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
 :::
+
+:::warning
+**IT IS STRONGLY ADVISED FLASHING THE FIRMWARE WITH SP FLASH TOOL BEFORE UNLOCKING THE BOOTLOADER, OR YOU MIGHT RISK AN HARD BRICK IF ANDROID 13 IS STILL PRESENT IN ONE OF YOUR SLOTS**
+:::
 1. Enable "OEM Unlocking" in developer settings
 2. Clone repository [fuckyoumoto-utils](https://github.com/fuckyoumoto/fuckyoumoto-utils)
 3. Boot the phone to [fastboot mode](../modes/fastboot.mdx)
