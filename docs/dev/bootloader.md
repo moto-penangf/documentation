@@ -19,7 +19,7 @@ We finally managed to find out the key generation algorithm and you can unlock t
 - [mtkclient](#using-mtkclient)
 
 ### Video tutorial
-<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/3fHfiqM7UUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/3fHfiqM7UUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Bootloader unlock
 :::note
@@ -31,6 +31,8 @@ Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
 :::warning
 **IT IS STRONGLY ADVISED FLASHING THE FIRMWARE WITH SP FLASH TOOL BEFORE UNLOCKING THE BOOTLOADER, OR YOU MIGHT RISK AN HARD BRICK IF ANDROID 13 IS STILL PRESENT IN ONE OF YOUR SLOTS**
 :::
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/EGY1_JjN9hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 1. Enable "OEM Unlocking" in developer settings
 2. Clone repository [fuckyoumoto-utils](https://github.com/fuckyoumoto/fuckyoumoto-utils)
 3. Boot the phone to [fastboot mode](../modes/fastboot.mdx)
