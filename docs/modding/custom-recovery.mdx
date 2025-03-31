@@ -1,12 +1,36 @@
 ---
 title: Custom recovery
 ---
+import losrImg from "@site/static/assets/custom-recovery/losr.jpg";
 import twrpImg from "@site/static/assets/custom-recovery/twrp.jpg";
 import ofoxImg from "@site/static/assets/custom-recovery/ofox.jpg";
 
 :::warning
 Make sure you have the [bootloader unlocked](../dev/bootloader.md) or you will get [soft brick](../info/softbrick.md)!
 :::
+
+## LOSR (Lineage OS Recovery)
+:::info
+Currently the most stable custom recovery
+:::
+
+<img src={losrImg} width="200" />
+
+### Install
+1. Download [latest release](https://penangf.fuckyoumoto.xyz/assets/modding/recovery/los-recovery.img)
+2. Reboot to [fastboot mode](../modes/fastboot)
+3. Disable vbmeta (if partition not found - ignore)
+    ```shell
+    $ fastboot flash vbmeta vbmeta.img --disable-verity --disable-verification
+    ```
+4. Flash LOSR
+    ```shell
+    $ fastboot flash vendor_boot los-recovery.img
+    ```
+
+### Credits
+- Author of the build: [GitFASTBOOT](https://github.com/GitFASTBOOT)
+- Tester & saving the last working version: [DiabloSat](https://github.com/progzone122)
 
 ## TWRP
 
@@ -51,7 +75,7 @@ Make sure you have the [bootloader unlocked](../dev/bootloader.md) or you will g
     ```shell
     $ fastboot flash vbmeta vbmeta.img --disable-verity --disable-verification
     ```
-4. Flash TWRP
+4. Flash Orange Fox
     ```shell
      $ fastboot flash vendor_boot vendor_boot.img
     ```
