@@ -108,3 +108,14 @@ $ fastboot flash lk chouchou-UHA34.29-10.img
     ```shell
     $ fastboot flash lk lk.img-patched
     ```
+
+### Troubleshooting
+#### No image on the screen after flashing ChouChou
+In some regions, due to incompatibility between DTBO and LK, the screen may not display an image.
+To fix this, you need to [flash the stock firmware](../info/flash_stock.md) from a compatible region (e.g. RETEU) via fastboot.
+
+#### Some ChouChou functions do not work correctly
+On some firmware versions, not all ChouChou functions may not work correctly, as the offsets change with each update.
+However, ***the key mechanisms that prevent Hard Brick devices always remain working***.
+
+If you want to fix incompatibilities, you need to manually update the offsets and make a new build manually.
