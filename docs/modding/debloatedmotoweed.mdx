@@ -1,0 +1,24 @@
+import LogoImg from "@site/static/assets/modding/debloatedmotoweed/logo.png"
+
+# DebloatedMotoWeed
+Custom firmware A14 without bloatware for penangf (Moto G13/G23), based on stock.
+
+<img src={LogoImg} width={400} />
+
+## Features
+- Removed Motorola bloatware software (even those that could not be removed manually).
+- Removed pre-installation of all the bloatware from Google (if we need it, we'll install it manually, right?).
+- Magisk image avaliable
+- Removed all Motorola telemetry
+- Enabled Camera2 API
+- config.props tweaks
+- Implemented signature spoofing
+- Heavy applications have been replaced with alternatives [In the process...]
+
+## Install
+1. [Install](../info/flash_stock) any stock firmware on A14
+2. Download all files from the [latest release](https://github.com/moto-penangf/DebloatedMotoWeed/releases)
+3. Unpack the archive product_a.zip
+4. Reboot the phone in fastbootd
+5. Use the install.sh / install.bat script to install the modified firmware
+6. Optional you can install LOS recovery, magisk, chouchou images from the release
