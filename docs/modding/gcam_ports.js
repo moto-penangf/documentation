@@ -1,9 +1,3 @@
-// GcamTabs.js
-import React from 'react';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import Link from "@docusaurus/Link";
-
 export const gcam_ports = {
     platinum: [],
     gold: [
