@@ -1,0 +1,73 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Link from "@docusaurus/Link";
+
+import { gcam_ports } from "./gcam_ports";
+
+import props1 from "@site/static/assets/modding/gcam/props-edit1.png";
+import props2 from "@site/static/assets/modding/gcam/props-edit2.png";
+
+# Gcam (Google camera)
+
+GCam is Google's official camera app, originally developed for the Pixel series of smartphones.
+It's known for taking great photos not because of hardware, but because of software processing.
+
+## Bugs
+- The 50MP camera mode does not work
+
+## Install
+The installation is slightly different depending on which firmware you are using.
+### Stock firmware
+:::warning
+Stock firmware doesn't support Camera2 API by default, so you'll need to fix that manually
+:::
+1. [Unlock bootloader](../dev/bootloader.md) and get [root access](./root.mdx) on your device
+2. Add a new property to the end of the ```system/build.prop``` file and save
+    ```shell
+    persist.camera.HAL3.enabled=1
+    ```
+    <img src={props1} width="500" />
+    <img src={props2} width="500" />
+3. Reboot the phone
+4. Download and install the gcam from the ones listed below
+
+### DebloatedMotoWeed firmware
+If you have already installed [DebloatedMotoWeed](./debloatedmotoweed.mdx) firmware, you don't need to take any additional steps, ***you don't even need root***.
+
+Camera2 API is already enabled by default. ***Just download the gcam from the ones listed below!***
+
+## Download
+Below are the gcam ports that have been pre-tested on our device. Focus on the best rating.
+
+export const tabData = [
+    { label: "Platinum", value: "0", items: gcam_ports.platinum },
+    { label: "Gold",     value: "1", items: gcam_ports.gold },
+    { label: "Silver",   value: "2", items: gcam_ports.silver },
+    { label: "Bronze",   value: "3", items: gcam_ports.bronze },
+    { label: "Broken",   value: "4", items: gcam_ports.broken },
+];
+export const nonEmptyTabs = tabData.filter(tab => tab.items.length > 0);
+
+{
+    <Tabs>
+        {nonEmptyTabs.map((tab, index) => (
+            <TabItem
+                key={tab.value}
+                value={tab.value}
+                label={tab.label}
+                default={index === 0}
+            >
+                {tab.items.map((item, idx) => (
+                    <Link
+                        key={idx}
+                        target="_blank"
+                        to={item.link}
+                        style={{ display: "block", marginBottom: "8px" }}
+                    >
+                        {item.name}
+                    </Link>
+                ))}
+            </TabItem>
+        ))}
+    </Tabs>
+}

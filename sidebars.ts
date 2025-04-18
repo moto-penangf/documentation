@@ -42,7 +42,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Modding',
-      items: ['modding/custom-bootloader', 'modding/custom-recovery', 'modding/root', 'modding/gsi', 'modding/disable-bootloader-warnings', 'modding/debloatedmotoweed']
+      items: ['modding/custom-bootloader', 'modding/custom-recovery', 'modding/root', 'modding/gsi', 'modding/disable-bootloader-warnings', 'modding/debloatedmotoweed', 'modding/gcam']
     },
     {
       type: 'category',
