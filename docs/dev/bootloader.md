@@ -33,6 +33,10 @@ Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
 :::
 <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/EGY1_JjN9hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+0. MAKE SURE YOU HAVE THE SAME ANDROID VERSION ON BOTH SLOTS!!</br>
+    Otherwise, you might risk hard bricking the phone.</br>
+    We suggest flashing stock firmware BEFORE unlocking the bootloader (with SP Flash Tool), to reduce the risks of hardbricking
+    when switching slots. **DO NOT SKIP THIS STEP**
 1. Enable "OEM Unlocking" in developer settings
 2. Clone repository [fuckyoumoto-utils](https://github.com/fuckyoumoto/fuckyoumoto-utils)
 3. Boot the phone to [fastboot mode](../modes/fastboot.mdx)
