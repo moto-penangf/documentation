@@ -17,8 +17,6 @@ Open SP Flash Tool and use the scatter file (.txt) you find in the firmware arch
 
 Select DA_PL_NO_CERT_V6.bin as the Download Agent.
 
-**Untick the preloader partition**, unless you're installing a new version of stock firmware compared to the one you had.
-
 :::warning
 **MAKE SURE YOU'RE NOT SELECTING DOWNLOAD+FORMAT ALL, JUST DOWNLOAD ONLY**
 :::
