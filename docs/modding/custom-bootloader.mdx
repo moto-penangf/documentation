@@ -2,7 +2,15 @@
 title: Custom Bootloader
 ---
 
-export const images = [
+export const kaeru_images = [
+    {
+        "payload_version": "1.0.0",
+        "firmware_version": "UHA34.29-5",
+        "url": "https://penangf.fuckyoumoto.xyz/assets/modding/kaeru/1.0.0/kaeru-UHA34.29-5.img"
+    },
+];
+
+export const chouchou_images = [
     {
         "payload_version": "0.2",
         "firmware_version": "UHA34.29-10",
@@ -43,11 +51,10 @@ Make sure you have the [bootloader unlocked](../dev/bootloader.md) or you will g
 Thanks to [Roger Ortiz](https://github.com/R0rt1z2) for developing the payload for our bootloader!
 :::
 
-The custom bootloader protects the device from Hard Brick by preventing critical operations such as flashing the preloader and locking the bootloader without restoring the original firmware. 
-
+The custom bootloader protects the device from Hard Brick by preventing critical operations such as flashing the preloader and locking the bootloader without restoring the original firmware.<br />
 In addition, it extends the functionality by adding new options for customizing and managing the system.
 
-## Features
+### Features
 - Blocks ```fastboot flash preloader```
 - Removes orange state
 - Spoofs verified state to green
@@ -55,10 +62,11 @@ In addition, it extends the functionality by adding new options for customizing 
 - Adds ```fastboot oem help```
 - Adds ```fastboot oem hexdump```
 
-## Install
-### Prebuild images
+## Kaeru
 
-export const grouped = images.reduce((acc, item) => {
+### Install
+#### Prebuild images
+export const kaeru_grouped = kaeru_images.reduce((acc, item) => {
     if (!acc[item.payload_version]) {
         acc[item.payload_version] = [];
     }
@@ -66,11 +74,47 @@ export const grouped = images.reduce((acc, item) => {
     return acc;
 }, {});
 
-{Object.keys(grouped).map(payload_version => (
+{Object.keys(kaeru_grouped).map(payload_version => (
+    <details key={payload_version} className="custom-details">
+        <summary>Kaeru v{payload_version}</summary>
+        <ul>
+            {kaeru_grouped[payload_version].map(item => (
+            <a href={item.url}><li key={item.firmware_version}>{item.firmware_version}</li></a>
+            ))}
+        </ul>
+    </details>
+))}
+
+<br />
+
+```shell
+$ fastboot flash lk kaeru-UHA34.29-5.img
+```
+
+#### Manually build
+[RTFM kaeru wiki](https://github.com/R0rt1z2/kaeru/wiki/Porting-kaeru-to-a-new-device)
+
+## ChouChou
+:::warning
+Don't use ChouChou unnecessarily, it's outdated
+:::
+
+### Install
+#### Prebuild images
+
+export const chouchou_grouped = chouchou_images.reduce((acc, item) => {
+    if (!acc[item.payload_version]) {
+        acc[item.payload_version] = [];
+    }
+    acc[item.payload_version].push(item);
+    return acc;
+}, {});
+
+{Object.keys(chouchou_grouped).map(payload_version => (
     <details key={payload_version} className="custom-details">
         <summary>ChouChou v{payload_version}</summary>
         <ul>
-            {grouped[payload_version].map(item => (
+            {chouchou_grouped[payload_version].map(item => (
                 <a href={item.url}><li key={item.firmware_version}>{item.firmware_version}</li></a>
             ))}
         </ul>
@@ -83,7 +127,7 @@ export const grouped = images.reduce((acc, item) => {
 $ fastboot flash lk chouchou-UHA34.29-10.img
 ```
 
-### Manually build
+#### Manually build
 1. Download your current firmware archive from [lolinet](https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
 2. Clone repository [chouchou](https://github.com/R0rt1z2/chouchou)
 3. Transfer the ```lk.img``` file from the firmware archive to the directory ```chouchou```
