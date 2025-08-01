@@ -23,7 +23,7 @@ We finally managed to find out the key generation algorithm and you can unlock t
 
 ### Bootloader unlock
 :::note
-You can also use [**this website**](https://html-preview.github.io/?url=https://github.com/cxzstuff/stuff/blob/main/Moto-G23-G13-oem-key2.html) to generate the key instead of using the script if you can't use python. 
+You can also use [**this website**](https://html-preview.github.io/?url=https://github.com/cxzstuff/stuff/blob/main/Moto-G23-G13-oem-key2.html) to generate the key instead of using the script if you can't use python.
 
 Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
 :::
@@ -32,18 +32,24 @@ Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
 **IT IS STRONGLY ADVISED FLASHING THE FIRMWARE WITH SP FLASH TOOL BEFORE UNLOCKING THE BOOTLOADER, OR YOU MIGHT RISK AN HARD BRICK IF ANDROID 13 IS STILL PRESENT IN ONE OF YOUR SLOTS**
 :::
 <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/EGY1_JjN9hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<br/>
+<br/>
 0. MAKE SURE YOU HAVE THE SAME ANDROID VERSION ON BOTH SLOTS!!<br/>
     Otherwise, you might risk hard bricking the phone.<br/>
     We suggest flashing stock firmware BEFORE unlocking the bootloader (with SP Flash Tool), to reduce the risks of hardbricking
-    when switching slots. **DO NOT SKIP THIS STEP**
+    when switching slots. **DO NOT SKIP THIS STEP**<br/>
+
+  :::note
+  If you have [mtkclient](https://github.com/bkerler/mtkclient) installed, you can compare both preloader slots using the `preloader_diff.py` script from the [fuckyoumoto-utils repository](https://github.com/fuckyoumoto/fuckyoumoto-utils) to guarantee avoiding potential issues without reflashing the device.
+  :::
+<br/>
 1. Enable "OEM Unlocking" in developer settings
 2. Clone repository [fuckyoumoto-utils](https://github.com/fuckyoumoto/fuckyoumoto-utils)
 3. Boot the phone to [fastboot mode](../modes/fastboot.mdx)
 4. Get the first part of the soc_id
     ```shell
     $ fastboot oem get_key
-   
+
     (bootloader) 061A757D042B2A378D9761E60C9D3FBC
     (bootloader) finish dump
     OKAY [  0.003s]
@@ -52,7 +58,7 @@ Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
 5. Run the ```oem_keygen.py``` script to generate the oem key, specifying the received key via the argument
     ```shell
     $ python oem_keygen.py 061A757D042B2A378D9761E60C9D3FBC
-   
+
     To hash:  061A757D042B2A378D9761E60C9D3FBC061A757D042B2A378D9761E60C9D3FBC
     Hash:  87f3aef774eb3edbcdef39e2e94d05c98d7fd1b5db8e7623345412390e1db289
     Possible keys:
@@ -64,16 +70,16 @@ Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
     ```
 6. Copy the first generated oem key and specify it with the ```fastboot oem key <KEY>``` command and try unlocking the bootloader
     ````shell
-    $ fastboot oem key 87f3aef774eb3edbcdef39e2e94d05c9 
-   
+    $ fastboot oem key 87f3aef774eb3edbcdef39e2e94d05c9
+
     (bootloader) open fastboot unlock
     OKAY [  0.000s]
     Finished. Total time: 0.000s
     ````
-   
+
     ````shell
     $ fastboot flashing unlock
-   
+
     (bootloader) Start unlock flow
     (bootloader) 061A757D042B2A378D9761E60C9D3FBC
     (bootloader) start fastboot unlock
@@ -87,7 +93,7 @@ Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
 7. Checking bootloader unlocking
     ````shell
     $ fastboot oem lks
-   
+
     (bootloader) lks = 0
     OKAY [  0.005s]
     Finished. Total time: 0.005s
@@ -100,7 +106,7 @@ Thanks to [**@cxzstuff**](https://github.com/cxzstuff) for making it.
    ```shell
    $ fastboot flash logo logo-5fa2e5b8652ffaebad2bcc6768530fae.bin
    ```
-   
+
 9. Flash custom bootloader (HIGHLY RECOMMENDED)
 
    [Go to guide](../modding/custom-bootloader.mdx)
@@ -131,7 +137,7 @@ $ fastboot flashing get_unlock_ability
 (bootloader) unlock_ability = 16777216
 ```
 
-In this case the number is equal to 2^24 (24th bit), which seem to either mean **unlockable under certain conditions**, or simply an overflow/bug in fastboot when the bootloader can be unlocked. 
+In this case the number is equal to 2^24 (24th bit), which seem to either mean **unlockable under certain conditions**, or simply an overflow/bug in fastboot when the bootloader can be unlocked.
 
 The device has a mediatek SoC, so trying with the flashing unlock command:
 
@@ -151,7 +157,7 @@ The command to install and dump the key was discovered by [DiabloSat](https://gi
 In order to specify the key, we need to run the fastboot oem key \<KEY\> command.
 :::
 
-#### Dump of the current oem key 
+#### Dump of the current oem key
 Just in case, make a dump of the current oem key
 
 ```sh
@@ -210,9 +216,9 @@ FAILED (remote: 'Unlock key code is incorrect!')
 fastboot: error: Command failed
 ```
 
-The first line (which is the key fastboot knoes and has to verify against the second key appearing) is completely empty. 
+The first line (which is the key fastboot knoes and has to verify against the second key appearing) is completely empty.
 
-Decompiling LK it's clear that it suppose to be filled by the key (which is also the first part of the SoC ID) that has to be stored inside the global variable before everything else. 
+Decompiling LK it's clear that it suppose to be filled by the key (which is also the first part of the SoC ID) that has to be stored inside the global variable before everything else.
 
 I suspect there's a possibility that fastboot hashes an empty 32 character buffer, and could possibly lead to some exploitation of either the sha256 function or the copy of the hash into a temporary buffer.<br/>
 It is confirmed that feeding the first 32 characters of the hash of an empty string as the key doesn't unlock the bootloader.
