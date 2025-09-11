@@ -5,8 +5,8 @@ title: Custom Bootloader
 export const kaeru_images = [
     {
         "payload_version": "1.0.0",
-        "firmware_version": "UHA34.29-5",
-        "url": "https://penangf.fuckyoumoto.xyz/assets/modding/kaeru/1.0.0/kaeru-UHA34.29-5.img"
+        "firmware_version": "UHA34.29-20",
+        "url": "https://penangf.fuckyoumoto.xyz/assets/modding/kaeru/1.0.0/kaeru-UHA34.29-20.img"
     },
 ];
 
@@ -58,9 +58,11 @@ In addition, it extends the functionality by adding new options for customizing 
 - Blocks ```fastboot flash preloader```
 - Removes orange state
 - Spoofs verified state to green
+- Spoofs bootloader lock status
 - Block ```fastboot flashing lock```
 - Adds ```fastboot oem help```
 - Adds ```fastboot oem hexdump```
+- Adds ```fastboot oem bldr_spoof```
 
 ## Kaeru
 
@@ -154,6 +156,10 @@ $ fastboot flash lk chouchou-UHA34.29-10.img
     ```
 
 ### Troubleshooting
+#### The "no permit flash no sign partition" error appears
+To fix this, flash kaeru/chouchou to lk_a and lk_b through fastbootd (recovery),
+then go back to bootloader mode, and the issue will be fixed.
+
 #### No image on the screen after flashing ChouChou
 In some regions, due to incompatibility between DTBO and LK, the screen may not display an image.
 To fix this, you need to [flash the stock firmware](../info/flash_stock.md) from a compatible region (e.g. RETEU) via fastboot.
