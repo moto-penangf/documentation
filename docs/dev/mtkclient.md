@@ -5,7 +5,7 @@ title: MtkClient
 # MtkClient
 
 :::info
-More information can be found in the [issue for the mtkclient repository](https://github.com/bkerler/mtkclient/issues/1355)
+More information can be found in the [issue for the mtkclient repository](https://web.archive.org/web/20251007190409/https://github.com/bkerler/mtkclient/issues/1355)
 :::
 
 ## Security mechanisms info
